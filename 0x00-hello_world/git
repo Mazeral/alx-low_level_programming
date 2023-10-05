@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u+x * && git add . && git commit -m "Learnin c" && git push
+chmod u+x * && git add . && git commit -m "Learning c" && git push
