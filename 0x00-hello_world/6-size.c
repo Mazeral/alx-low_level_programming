@@ -20,7 +20,7 @@ int g = sizeof(b);
 printf("Size of a char: %d byte(s)\n", c);
 printf("Size of a int: %d byte(s)\n", d);
 printf("Size of a long int: %d byte(s)\n", e);
-printf("Size of a long long int: %d byte(s)\n, a", f);
+printf("Size of a long long int: %d byte(s)\n", f);
 printf("Size of a float: %d byte(s)\n", g);
 
 return (0);
