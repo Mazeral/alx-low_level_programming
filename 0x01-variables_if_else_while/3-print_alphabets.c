@@ -11,12 +11,12 @@ char sml = 'a';
 char big = 'A';
 for (i = 0; i < 26; i++)
 {
-puthcar(sml);
+putchar(sml);
 sml++;
 }
 for (i = 0; i < 26; i++)
 {
-putchar('big');
+putchar(big);
 big++;
 }
 putchar('\n');
