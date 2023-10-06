@@ -1,0 +1,2 @@
+#!/bin/bash
+git add . && git commit -m "Variables, if else and loops with c" && git push && betty *
