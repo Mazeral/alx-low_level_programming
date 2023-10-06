@@ -10,7 +10,7 @@ char sml = 'a';
 for (i = 0; i < 26; i++)
 {
 if (sml != 'e' || sml != 'q')
-putchar(sml);
+putchar (sml);
 sml++;
 }
 return(0);
