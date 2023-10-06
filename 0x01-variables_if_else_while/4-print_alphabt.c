@@ -13,5 +13,6 @@ if (sml != 'e' || sml != 'q')
 putchar (sml);
 sml++;
 }
+putchar ('\n');
 return (0);
 }
