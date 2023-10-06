@@ -13,5 +13,5 @@ if (sml != 'e' || sml != 'q')
 putchar (sml);
 sml++;
 }
-return(0);
+return (0);
 }
