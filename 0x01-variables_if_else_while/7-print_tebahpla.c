@@ -6,7 +6,7 @@
 
 int main(void)
 {
-char z = 'z'
+char z = 'z';
 for (i = 0; i < 26; i++)
 {
 putchar(z);
