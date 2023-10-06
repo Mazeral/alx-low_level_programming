@@ -10,7 +10,7 @@ int ch = 49;
 for (i = 0; i < 10; i++)
 {
 putchar (ch);
-n++;
+ch++;
 }
 putchar ('\n');
 return (0);
