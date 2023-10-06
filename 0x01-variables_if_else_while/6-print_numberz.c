@@ -6,10 +6,10 @@
 int main(void)
 {
 int i;
-char n = 49;
+int ch = 49
 for (i = 0; i < 10; i++)
 {
-putchar (n);
+putchar (ch);
 n++;
 }
 putchar ('\n');
