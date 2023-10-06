@@ -1,11 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
-
 /**
- *
  * main - The entry point
  *
- * Return (0): Returns always successs
+ * Return: always success (0)
  */
 int main(void)
 {
