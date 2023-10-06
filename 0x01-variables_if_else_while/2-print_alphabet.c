@@ -7,7 +7,9 @@
 
 int main(void)
 {
-char alph[] = "abcdefghijklmnopqrstuvwxyz";
+char alph = 'a';
+for (i = 0; i < 27; i++)
 putchar(alph);
+putchar('\n');
 return (0);
 }
