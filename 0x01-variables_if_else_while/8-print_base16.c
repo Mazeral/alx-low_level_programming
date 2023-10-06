@@ -19,6 +19,6 @@ for (i = 0; i < 6; i++)
 putchar(alph);
 alph++;
 }
-putchat('\n');
+putchar('\n');
 return (0);
 }
