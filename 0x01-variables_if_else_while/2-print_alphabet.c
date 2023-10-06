@@ -10,7 +10,10 @@ int main(void)
 int i;
 char alph = 'a';
 for (i = 0; i < 27; i++)
+{
 putchar(alph);
+alph++;
+}
 putchar('\n');
 return (0);
 }
