@@ -7,6 +7,7 @@
 
 int main(void)
 {
-putchar("abcdefghijklmnopqrstuvwxyz");
+char alph[] = "abcdefghijklmnopqrstuvwxyz";
+putchar(alph);
 return (0);
 }
