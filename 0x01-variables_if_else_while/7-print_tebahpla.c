@@ -13,5 +13,6 @@ for (i = 0; i < 26; i++)
 putchar(z);
 z--;
 }
+putchar ('\n');
 return (0);
 }
