@@ -6,6 +6,7 @@
 
 int main(void)
 {
+int i;
 char sml = 'a';
 for (i = 0; i < 26; i++)
 {
