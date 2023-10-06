@@ -6,7 +6,7 @@
 int main(void)
 {
 int i;
-int ch = 49;
+int ch = 48;
 for (i = 0; i < 10; i++)
 {
 putchar (ch);
