@@ -4,7 +4,7 @@
  * Return: always success
  */
 
-int main (void)
+int main(void)
 {
 int n = 48;
 char alph = 'a';
