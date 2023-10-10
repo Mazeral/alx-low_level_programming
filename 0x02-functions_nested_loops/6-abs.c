@@ -2,7 +2,7 @@
 
 /**
  * _abs - the function of the solution
- * @int: the input
+ * @x: the input
  * Return: absolute value of the input
  */
 int _abs(int x)
