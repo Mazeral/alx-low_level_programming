@@ -23,7 +23,7 @@ void print_alphabet_x10(void)
 {
 int j = 0;
 char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
-for (j; j < 10; j++)
+for (; j < 10; j++)
 {
 my_print(alph);
 }
