@@ -21,8 +21,8 @@ putchar(t[i]);
  */
 void print_alphabet_x10(void)
 {
-int i = 0;
-for (i; i < 10; i++)
+int j = 0;
+for (j; j < 10; j++)
 {
 char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
 my_print(alph);
