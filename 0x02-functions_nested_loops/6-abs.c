@@ -18,11 +18,15 @@ putchar(t[i]);
 }
 /**
  * _abs - the function of the solution
- * @a: the input
+ * @i: the input
  * Return: absolute value of the input
  */
-int _abs(int *a)
+int _abs(int i)
 {
-int x = *a < 0 ? -*a: *a;
-return (x);
+if (i > 0)
+return (i);
+else if (i < 0)
+return (-i);
+else
+return (0);
 }
