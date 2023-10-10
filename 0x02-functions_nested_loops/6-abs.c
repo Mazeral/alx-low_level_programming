@@ -23,5 +23,5 @@ putchar(t[i]);
 int _abs(int x)
 {
 int n = (x ** 2) ** 0.5;
-return (0);
+return (n);
 }
