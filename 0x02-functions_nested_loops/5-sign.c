@@ -22,22 +22,15 @@ putchar(t[i]);
  */
 int print_sign(int n)
 {
-char pos[] = "+1";
-char neg[] = "-1";
-char zero[] = "00";
 if (n > 0)
 {
-my_print(pos);
-return (0);
+return (putchar('+1'));
 }
 else if (n == 0)
 {
-my_print(zero);
-return (0);
+return (putchar('00'));
 }
 else
 {
-my_print(neg);
-return (0);
-}
+return (putchar('-1'));
 }
