@@ -26,6 +26,6 @@ int lastdigit = x % 10;
 if (lastdigit < 0)
 lastdigit *= -1;
 
-_putchar ('0' + lastdigit);
+putchar (lastdigit + '0');
 return (lastdigit);
 }
