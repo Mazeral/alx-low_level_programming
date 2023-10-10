@@ -1,6 +1,5 @@
 #include"main.h"
 #include<string.h>
-#include<stdio.h>
 /**
  * my_print - a custom function for printing easily
  * @t: the parameter that recieves the char array
