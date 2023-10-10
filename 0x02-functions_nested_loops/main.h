@@ -8,7 +8,7 @@
 void sol(void)
 {
 char ans[] = "_putchar\n";
-putchar(ans);
+putchar('_putchar\n');
 }
 
 /**
