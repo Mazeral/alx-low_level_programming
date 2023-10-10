@@ -21,6 +21,6 @@ putchar(t[i]);
  */
 void print_alphabet(void)
 {
-char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
+char alph[] = "abcdefghijkhlmnopqrstuvwxyz";
 my_print(alph);
 }
