@@ -11,7 +11,7 @@ int i;
 int len = strlen(x);
 for (i = 0; i < len; i++)
 {
-putchar(x[i])
+putchar(x[i]);
 }
 }
 /**
