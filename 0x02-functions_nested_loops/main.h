@@ -5,7 +5,7 @@
  * @t: the array of char it uses
  * Return: void
  */
-void print(char t[])
+void my_print(char t[])
 {
 int i;
 int len = strlen(t);

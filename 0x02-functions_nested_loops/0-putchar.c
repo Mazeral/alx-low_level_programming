@@ -7,6 +7,6 @@
 int main(void)
 {
 char t[] = "_putchar\n";
-print(t);
+my_print(t);
 return (0);
 }

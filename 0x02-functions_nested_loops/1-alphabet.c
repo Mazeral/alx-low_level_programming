@@ -6,5 +6,6 @@
 void print_alphabet(void)
 {
 char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
-print(alph);
+my_print(alph);
+return (void);
 }
