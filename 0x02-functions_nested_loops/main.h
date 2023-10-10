@@ -13,7 +13,6 @@ for(i = 0; i < len; i++)
 {
 putchar(t[i]);
 }
-return (void);
 }
 void sol(void);
 void print_alphabet(void);
