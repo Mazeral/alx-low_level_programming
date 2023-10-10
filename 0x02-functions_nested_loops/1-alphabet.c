@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * print_alphabet - the solution function
  * Return: void, nothing

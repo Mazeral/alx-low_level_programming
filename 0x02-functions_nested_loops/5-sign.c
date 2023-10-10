@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+#include"main.h"
 /**
  * print_sign - the solution function
  * @n: The paramter of the number to be examined

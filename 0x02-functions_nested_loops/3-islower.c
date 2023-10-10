@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  *  _islower - the solution prototype
  * @c: Takes the character

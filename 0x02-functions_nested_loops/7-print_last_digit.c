@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+
+#include"main.h"
 /**
  * print_last_digit - prints the last digit
  * @x: Takes the input

@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+#include"main.h"
 /**
  * _abs - the function of the solution
  * @x: the input

@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * _isalpha - the solution function
  * @c: The param that takes the input
