@@ -1,4 +1,5 @@
 #include<string.h>
+#include<stdio.h>
 /**
  * print - a custom print function
  * @t: the array of char it uses
