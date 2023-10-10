@@ -27,5 +27,6 @@ if (lastdigit < 0)
 lastdigit *= -1;
 
 putchar (lastdigit + '0');
-return (lastdigit);
+int output = lastdigit * 10 + lastdigit;
+return (output);
 }
