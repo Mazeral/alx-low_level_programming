@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 /**
  * main - the solution function
  * Return: returns void
