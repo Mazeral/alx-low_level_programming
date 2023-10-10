@@ -1,6 +1,3 @@
-#include<string.h>
-#include<stdio.h>
-void my_print(char t[]);
 void sol(void);
 void print_alphabet(void);
 void print_alphabet_x10(void);
