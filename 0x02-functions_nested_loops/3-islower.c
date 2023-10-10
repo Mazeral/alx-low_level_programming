@@ -1,4 +1,5 @@
 #include"main.h"
+#include<stdio.h>
 #include<string.h>
 /**
  * my_print - the printing functions
