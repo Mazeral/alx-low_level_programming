@@ -1,19 +1,6 @@
 #include<string.h>
 #include<stdio.h>
-/**
- * print - a custom print function
- * @t: the array of char it uses
- * Return: void
- */
-void my_print(char t[])
-{
-int i;
-int len = strlen(t);
-for(i = 0; i < len; i++)
-{
-putchar(t[i]);
-}
-}
+void my_print(char t[]);
 void sol(void);
 void print_alphabet(void);
 void print_alphabet_x10(void);
