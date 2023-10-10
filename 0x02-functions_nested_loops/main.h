@@ -6,7 +6,8 @@
 void print(char t[])
 {
 int i;
-for(i = 0; i < strlen(t); i++)
+int len = strlen(t);
+for(i = 0; i < len; i++)
 {
 putchar(t[i]);
 }
