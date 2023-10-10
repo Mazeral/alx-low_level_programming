@@ -2,20 +2,6 @@
 #include<string.h>
 #include<stdio.h>
 /**
- * my_print - a custom function for printing easily
- * @t: the parameter that recieves the char array
- * Return: Nothing
- */
-void my_print(char t[])
-{
-int i;
-int len = strlen(t);
-for (i = 0; i < len; i++)
-{
-putchar(t[i]);
-}
-}
-/**
  *  _islower - the solution prototype
  * @c: Takes the character
  * Return: either 1 or 0 depending on the input
