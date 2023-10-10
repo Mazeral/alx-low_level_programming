@@ -1,5 +1,3 @@
-#include<stdio.h>
-
 #include"main.h"
 /**
  * print_sign - the solution function

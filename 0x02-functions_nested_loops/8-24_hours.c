@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include"main.h"
 /**
  * jack_bauer - a nested loop function
