@@ -1,6 +1,5 @@
 #include"main.h"
 #include<string.h>
-#include<stdio.h>
 /**
  * my_print - the printing functions
  * @x: where the text comes
