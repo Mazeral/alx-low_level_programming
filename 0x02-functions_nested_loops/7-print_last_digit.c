@@ -3,7 +3,8 @@
 /**
  * print_last_digit - prints the last digit
  * @x: Takes the input
- * Return: int*/
+ * Return: int
+ */
 int print_last_digit(int x)
 {
 return (x % 10);
