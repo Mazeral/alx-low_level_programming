@@ -1,4 +1,5 @@
 #include"main.h"
+#include<math.h>
 #include<string.h>
 #include<stdio.h>
 /**
@@ -22,6 +23,6 @@ putchar(t[i]);
  */
 int _abs(int x)
 {
-int n = (x ^ 2) ^ 0.5;
+int n = pow(x, 2) * pow(x, 0.5);
 return (n);
 }
