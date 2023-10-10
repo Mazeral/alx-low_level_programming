@@ -2,6 +2,20 @@
 #include<string.h>
 #include<stdio.h>
 /**
+ * _putchar - the printing functions
+ * @t: where the text comes
+ * Return: Nothing
+ */
+void _putchar(char x[])
+{
+int i;
+int len = strlen(x);
+for (i = 0; i < len; i++)
+{
+putchar(x[i]);
+}
+}
+/**
  *  _islower - the solution prototype
  * @c: Takes the character
  * Return: either 1 or 0 depending on the input
