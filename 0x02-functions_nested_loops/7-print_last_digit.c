@@ -1,4 +1,4 @@
-#include"main.h"
+
 #include<string.h>
 #include<stdio.h>
 /**
@@ -22,5 +22,10 @@ putchar(t[i]);
  */
 int print_last_digit(int x)
 {
-return (x % 10);
+int lastdigit = x % 10;
+if (lastdigit < 0)
+lastdigit *= -1;
+
+_putchar (lastdigit + '0');
+return (lastdigit);
 }
