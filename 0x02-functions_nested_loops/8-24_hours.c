@@ -22,7 +22,7 @@ putchar(t[i]);
  */
 void jack_bauer(void)
 {
-char zeros[] = "00"
+char zeros[] = "00";
 int i, j, k, l;
 for (i = 0; i < 3; i++)
 {
