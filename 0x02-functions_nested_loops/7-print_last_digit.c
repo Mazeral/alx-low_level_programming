@@ -22,10 +22,11 @@ putchar(t[i]);
  */
 int print_last_digit(int x)
 {
+int output;
 int lastdigit = x % 10;
 if (lastdigit < 0)
 lastdigit *= -1;
 
-int output = lastdigit * 10 + lastdigit;
+output = lastdigit * 10 + lastdigit;
 return (output);
 }
