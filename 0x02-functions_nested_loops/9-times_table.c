@@ -1,21 +1,28 @@
-#include<stdio.h>
-#include<string.h>
+#include "main.h"
 /**
- * my_print - a custom function for printing easily
- * @t: the parameter that recieves the char array
- * Return: Nothing
- */
-void my_print(char t[])
+*times_table - prints the 9 times table
+*
+*Return: returns nothing
+*/
+void times_table(void)
 {
-int i;
-int len = strlen(t);
-for (i = 0; i < len; i++)
+int digit, mult, result;
+for (digit = 0; digit <= 9; digit++)
 {
-putchar(t[i]);
-}
-}
+_putchar('0');
 
-/**
- * void times_table - the table function
- * Return: the times table
- */
+for (mult = 1; mult <= 9; mult++)
+{
+_putchar(',');
+_putchar(' ');
+result = digit * mult;
+if (result <= 9)
+_putchar(' ');
+else
+_putchar((result / 10) + '0');
+
+_putchar((result % 10) + '0');
+}
+_putchar('\n');
+}
+}
