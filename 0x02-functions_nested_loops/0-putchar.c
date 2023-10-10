@@ -7,6 +7,7 @@
 
 int main(void)
 {
-sol();
+void x;
+sol(x);
 return (0);
 }
