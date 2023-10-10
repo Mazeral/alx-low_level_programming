@@ -31,11 +31,11 @@ for (k = 0; k < 6; k++)
 {
 for (l = 0; l < 10; l++)
 {
-putchar(i);
-putchar(j);
-putchar(':');
-putchar(k);
-putchar(l);
+_putchar(i + '0');
+_putchar(j + '0');
+_putchar(':');
+_putchar(k + '0');
+_putchar(l + '0');
 putchar('\n');
 }
 }
