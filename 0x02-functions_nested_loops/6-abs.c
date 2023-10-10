@@ -21,8 +21,7 @@ putchar(t[i]);
  * @x: the input
  * Return: absolute value of the input
  */
-int _abs(int x)
+int _abs(int *a)
 {
-int n = pow(x, 2) * pow(x, 0.5);
-return (n);
+return (*a < 0 ? -*a: *a;);
 }
