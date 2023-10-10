@@ -22,7 +22,7 @@ putchar(t[i]);
 void print_alphabet_x10(void)
 {
 int j = 0;
-char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
+char alph[] = "abcdefghijklmnopqrstuvwxyz\n";
 for (; j < 10; j++)
 {
 my_print(alph);
