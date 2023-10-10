@@ -25,6 +25,6 @@ int i = 0;
 for (i; i < 10; i++)
 {
 char alph[] = "abcdefghijkhlmnopqrstuvwxyz\n";
-_putchar(alph[i]);
+my_print(alph);
 }
 }
