@@ -7,6 +7,6 @@
  */
 int _abs(int x)
 {
-int n = (x**2)**0.5;
+int n = (x ** 2) ** 0.5;
 return (0);
 }
