@@ -2,8 +2,8 @@
 #include<string.h>
 #include<stdio.h>
 /**
- * _putchar - the printing functions
- * @t: where the text comes
+ * my_print - the printing functions
+ * @x: where the text comes
  * Return: Nothing
  */
 void my_print(char x[])
