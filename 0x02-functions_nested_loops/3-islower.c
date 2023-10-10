@@ -6,13 +6,13 @@
  * @t: where the text comes
  * Return: Nothing
  */
-void _putchar(char x[])
+void my_print(char x[])
 {
 int i;
 int len = strlen(x);
 for (i = 0; i < len; i++)
 {
-putchar(x[i]);
+putchar(x[i])
 }
 }
 /**
