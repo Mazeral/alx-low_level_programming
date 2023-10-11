@@ -28,9 +28,9 @@ largest = b;
 }
 }
 
-else 
+else
 {
-largest  = c;
+largest = c;
 }
 return (largest);
 }
