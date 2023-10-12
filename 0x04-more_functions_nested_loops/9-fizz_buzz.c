@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include"main.h"
 /**
  * main - the entry point
  * Return: Always success 0
