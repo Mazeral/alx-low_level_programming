@@ -5,11 +5,10 @@
  * @void: void
  * Return: nothing
  */
-
 void print_most_numbers(void)
 {
 int x = 48;
-for (; x < 58; i++)
+for (; x < 58; x++)
 {
 if (x != 50 && x != 52)
 {
