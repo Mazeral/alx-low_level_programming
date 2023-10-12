@@ -5,7 +5,7 @@
  *Return: void
  */
 
-void _putchar(char* s)
+void _putchar(char *s)
 {
 int len  = strlen(s);
 int i = 0;
