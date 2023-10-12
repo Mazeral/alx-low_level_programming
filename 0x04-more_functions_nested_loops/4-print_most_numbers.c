@@ -11,7 +11,7 @@ int i;
 int x = 48;
 for (i = 0; i < 10; i++)
 {
-if(i != 50 && i != 52)
+if (i != 50 && i != 52)
 {
 _putchar(x);
 }
