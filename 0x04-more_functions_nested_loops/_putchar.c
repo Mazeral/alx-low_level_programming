@@ -11,6 +11,6 @@ int len  = strlen(s);
 int i = 0;
 for (; i < len; i++)
 {
-putchar(s[i]);
+(write(1, &s[i], 1));
 }
 }

@@ -1,3 +1,4 @@
+#include<string.h>
 /**
  * print_numbers - prints the print_numbers
  * @void:nothing
@@ -7,5 +8,10 @@
 void print_numbers(void)
 {
 char *s = "123456789\n";
-_putchar(s);
+int len = strlen(s);
+int i;
+for(i = 0; i < len; i++)
+{
+_putchar(s[i]);
+}
 }
