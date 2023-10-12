@@ -15,20 +15,20 @@ for (j = 0; j < 19; j++)
 {
 if (j < 10)
 {
-putchar(list[j]);
+_putchar(list[j]);
 }
 else
 {
 k = 0;
 while (k < 2)
 {
-putchar(list[k + j]);
+_putchar(list[k + j]);
 k++;
 }
 }
 if (j >= 10)
 j++;
 }
-putchar('\n');
+_putchar('\n');
 }
 }
