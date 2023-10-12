@@ -7,19 +7,27 @@ void more_numbers(void)
 {
 int i;
 int j;
+char list[] = "01234567891011121314"
 for (i = 0; i < 10; i++)
 {
-for (j = 48; j < 62; j++)
+for (j = 0; j < 14; j++)
 {
-if (j < 58)
+if (j < 10)
 {
 _putchar(j);
 }
 else
 {
-_putchar(49);
-_putchar(j % 48);
+int k = 0
+while (k < 2)
+{
+_putchar(list[k+j]);
+k++;
 }
+}
+if (j > 9)
+j+=2;
+_putchar('\n');
 }
 }
 }
