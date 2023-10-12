@@ -1,3 +1,4 @@
+#include<string.h>
 /**
  * print_most_numbers - printing a list of numbers
  * @void: void
@@ -6,7 +7,12 @@
 
 print_most_numbers(void)
 {
-char *s = "01356789\n";
-_putchar(s);
+char s[] = "01356789\n";
+int len = strlen(s);
+int i = 0;
+for (; i < len; i++)
+{
+_putchar(s[i]);
+}
 }
 
