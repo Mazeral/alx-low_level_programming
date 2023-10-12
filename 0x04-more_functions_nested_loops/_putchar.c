@@ -5,7 +5,7 @@
  *Return: void
  */
 
-void _putchar(char *s)
+void _putchar(char s)
 {
 return (write(1, &c, 1));
 }
