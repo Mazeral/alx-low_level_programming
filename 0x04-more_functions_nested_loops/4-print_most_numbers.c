@@ -5,7 +5,7 @@
  * Return: nothing
  */
 
-print_most_numbers(void)
+void print_most_numbers(void)
 {
 int i;
 int x = 48;
