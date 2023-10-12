@@ -1,3 +1,4 @@
+#include<stdio.h>
 /**
  * print_numbers - prints the print_numbers
  * @void:nothing
