@@ -8,9 +8,8 @@
 
 void print_most_numbers(void)
 {
-int i;
 int x = 48;
-for (i = 0; i < 10; i++)
+for (; x < 58; i++)
 {
 if (i != 50 && i != 52)
 {
