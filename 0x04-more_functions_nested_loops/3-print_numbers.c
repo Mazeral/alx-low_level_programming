@@ -7,11 +7,10 @@
 
 void print_numbers(void)
 {
-char *s = "123456789\n";
-int len = strlen(s);
-int i;
-for (i = 0; i < len; i++)
+int i = 0;
+for (; i < 10; i++)
 {
-_putchar(s[i]);
+_putchar(i);
 }
+_putchar('\n');
 }
