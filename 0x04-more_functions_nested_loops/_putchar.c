@@ -7,10 +7,5 @@
 
 void _putchar(char *s)
 {
-int len  = strlen(s);
-int i = 0;
-for (; i < len; i++)
-{
-(write(1, &s[i], 1));
-}
+return (write(1, &c, 1));
 }
