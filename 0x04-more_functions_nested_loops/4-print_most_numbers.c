@@ -7,12 +7,15 @@
 
 print_most_numbers(void)
 {
-char s[] = "01356789\n";
-int len = strlen(s);
-int i = 0;
-for (; i < len; i++)
+int i;
+int x = 48;
+for (i = 0; i < 10; i++)
 {
-_putchar(s[i]);
+if(i != 50 && i != 52)
+{
+_putchar(x);
 }
+}
+_putchar('\n');
 }
 
