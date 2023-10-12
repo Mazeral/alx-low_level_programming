@@ -11,24 +11,24 @@ int k;
 char list[] = "01234567891011121314";
 for (i = 0; i < 10; i++)
 {
-for (j = 0; j < 14; j++)
+for (j = 0; j < 20; j++)
 {
-if (j < 11)
+if (j < 10)
 {
-_putchar(j);
+putchar(list[j]);
 }
 else
 {
 k = 0;
 while (k < 2)
 {
-_putchar(list[k + j]);
+putchar(list[k + j]);
 k++;
 }
 }
-if (j > 9)
-j += 2;
+if (j >= 10)
+j++;
 }
-_putchar('\n');
+putchar('\n');
 }
 }
