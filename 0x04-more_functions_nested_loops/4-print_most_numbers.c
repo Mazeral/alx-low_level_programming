@@ -1,4 +1,5 @@
 #include<string.h>
+#include"main.h"
 /**
  * print_most_numbers - printing a list of numbers
  * @void: void
