@@ -6,7 +6,7 @@
 
 print_most_numbers(void)
 {
-char* s = "01356789\n";
+char *s = "01356789\n";
 _putchar(s);
 }
 
