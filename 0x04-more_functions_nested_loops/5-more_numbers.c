@@ -22,7 +22,7 @@ else
 k = 0;
 while (k < 2)
 {
-_putchar(list[k+j]);
+_putchar(list[k + j]);
 k++;
 }
 }
