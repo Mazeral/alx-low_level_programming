@@ -15,7 +15,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 len++;
 }
-char str[len] = '0';
+char str[];
 for (i = len - 1; i >= 0; i--)
 {
 int location = abs(((len - 1) - i));
