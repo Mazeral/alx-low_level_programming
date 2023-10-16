@@ -2,5 +2,5 @@
 /**
  * _puts - print a string
  * @s: the string
- * Return: the string
+ * Return: nothing 
  */
