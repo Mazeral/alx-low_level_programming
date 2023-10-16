@@ -1,4 +1,5 @@
 #include "main.h"
+#include<math.h>
 
 /**
  * rev_string - reverses a string
@@ -17,6 +18,7 @@ len++;
 char str[] = s;
 for (i = len - 1; i >= 0; i--)
 {
-str[i % len - 1] = s[i];
+int location = abs((len - 1) - i);
+str[location] = s[i];
 }
 }
