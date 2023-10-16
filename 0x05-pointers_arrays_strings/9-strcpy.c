@@ -17,5 +17,6 @@ for (i = 0; src[i] != '\0'; i++)
 dest[i] = src[i];
 len++;
 }
-dest[len - 1] = '\0';
+dest[len] = '\0';
+return (dest);
 }
