@@ -4,7 +4,6 @@
  * @str: the string
  * Return: Nothing, it's a void function
  */
-
 void _puts(char *str)
 {
 int i;
