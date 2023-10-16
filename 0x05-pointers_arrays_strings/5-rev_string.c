@@ -18,7 +18,7 @@ len++;
 char str[];
 for (i = len - 1; i >= 0; i--)
 {
-int location = abs(((len - 1) - i));
-str[location] = s[i];
+str[(len -1) - i] = s[i];
 }
+s = str;
 }
