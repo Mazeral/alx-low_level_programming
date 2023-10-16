@@ -15,11 +15,11 @@ for (i = 0; s[i] != '\0'; i++)
 {
 len++;
 }
-len--;
+int len1 = len - 1;
 for (i = 0; i < len / 2; i++)
 {
 char tmp = s[i];
-s[i] = s[len - i];
-s[len - i] = tmp;
+s[i] = s[len1 - i];
+s[len1 - i] = tmp;
 }
 }
