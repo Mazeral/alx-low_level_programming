@@ -15,7 +15,7 @@ for (i = 0; s[i] != '\0'; i++)
 {
 len++;
 }
-char str[];
+char str[len];
 for (i = len - 1; i >= 0; i--)
 {
 str[(len -1) - i] = s[i];
