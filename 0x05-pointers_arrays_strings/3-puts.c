@@ -9,6 +9,8 @@ int _putchar(char *s)
 {
 int i = 0;
 int len = _strlen(s);
-for(;i < ; i++)
+for(;i < len; i++)
 write(1, &c, 1);
+
+return (0);
 }
