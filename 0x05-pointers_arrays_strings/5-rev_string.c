@@ -15,11 +15,11 @@ for (i = 0; s[i] != '\0'; i++)
 {
 len++;
 }
-const int size = len;
-char str[size];
-for (i = len - 1; i >= 0; i--)
+len--;
+for (i = 0; i < len / 2; i++)
 {
-str[(len -1) - i] = s[i];
+char tmp = s[i];
+s[i] = s[len - i];
+s[len - i] = tmp;
 }
-s = str;
 }
