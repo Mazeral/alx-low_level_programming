@@ -18,6 +18,7 @@ concated[i] = dest[i];
 l++;
 }
 i = 0;
+l++;
 for (; src[i] != '\0'; i++)
 {
 concated[l] = src[i];
