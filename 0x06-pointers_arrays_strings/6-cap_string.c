@@ -4,7 +4,8 @@
  * @str: the string.
  * Return: A string with the same words, captilized.
  */
-
+#include <stdio.h>
+#include <ctype.h>
 char *cap_string(char *str)
 {
 int i;
