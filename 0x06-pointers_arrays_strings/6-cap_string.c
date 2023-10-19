@@ -7,8 +7,8 @@
 
 char *cap_string(char *s)
 {
-if (s[0] >= 'a' && s[0] <='z')
-s[0] -=32;
+if (s[0] >= 'a' && s[0] <= 'z')
+s[0] -= 32;
 int i = 0;
 int j;
 char list[] = {' ', '\t', '\n', ',', ';',
