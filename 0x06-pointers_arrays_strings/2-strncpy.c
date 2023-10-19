@@ -16,5 +16,6 @@ dest[i] = src[j];
 j++;
 i++;
 }
+printf('\n');
 return (dest);
 }
