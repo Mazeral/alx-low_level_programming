@@ -1,26 +1,29 @@
 #include "main.h"
 /**
  * cap_string - a function to cap every word.
- * @str: the string.
+ * @s: the string.
  * Return: A string with the same words, captilized.
  */
-#include <stdio.h>
-#include <ctype.h>
-char *cap_string(char *str)
+
+char *cap_string(char *s)
 {
-int i;
-int capitalize = 1;
-for (i = 0; str[i] != '\0'; i++)
+int i = 1;
+int j;
+char list[] = {' ', '\t', '\n', ',', ';',
+'.', '!', '?', '"', '(', ')', '{', '}', '\0'};
+while (s[i] != '\0')
 {
-if (capitalize && isalpha(str[i]))
+if (i - 1 >= 0)
 {
-str[i] = toupper(str[i]);
-capitalize = 0;
+for (j = 0; list[j] != '\0'; j++)
+{
+if (s[i] == list[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
+{
+s[i + 1] = s[i + 1] - 32;
 }
-else if (isspace(str[i]) || ispunct(str[i]))
-{
-capitalize = 1;
 }
 }
-return (str);
+i++;
+}
+return (s);
 }
