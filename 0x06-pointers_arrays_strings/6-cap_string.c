@@ -5,25 +5,19 @@
  * Return: A string with the same words, captilized.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str) {
+int i;
+int capitalize = 1;   
+for (i = 0; str[i] != '\0'; i++) {
+if (capitalize && isalpha(str[i]))
 {
-int i = 1;
-int j;
-char list[] = {' ', '\t', '\n', ',', ';',
-'.', '!', '?', '"', '(', ')', '{', '}', '\0'};
-while (s[i] != '\0')
+str[i] = toupper(str[i]);
+capitalize = 0;
+} else if (isspace(str[i]) || ispunct(str[i]))
 {
-if (i - 1 >= 0)
-{
-for (j = 0; list[j] != '\0'; j++)
-{
-if (s[i] == list[j] && s[i + 1] >= 'a' && s[i + 1] <= 'z')
-{
-s[i + 1] = s[i + 1] - 32;
+capitalize = 1;
 }
 }
-}
-i++;
-}
-return (s);
+return (str);
+;wa
 }
