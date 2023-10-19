@@ -9,19 +9,8 @@
  */
 char *_strcat(char *dest, char *src)
 {
-char *concated[99];
-int i = 0;
-int l = 0;
-for (; dest[i] != '\0'; i++)
-{
-concated[i] = dest[i];
-l++;
-}
-i = 0;
-l++;
-for (; src[i] != '\0'; i++)
-{
-concated[l] = src[i];
-}
-return (concated);
+char  *p;
+p = mempcpy(dst, src, strlen(src));
+*p = '\0';
+return (p);
 }
