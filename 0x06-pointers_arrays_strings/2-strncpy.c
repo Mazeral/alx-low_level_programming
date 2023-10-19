@@ -1,22 +1,23 @@
+#include "main.h"
 /**
- * strncpy - similar to strcpy, but with an n
+ * _strncpy - similar to strcpy, but with an n
  * @dest: the array to be changed
- * @the change
+ * @src: the change
+ * @n :The number of letters to be changed
  * Return: dest after change
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
-int i;
-for (i = 0; i < n; i++)
+int i = 0;
+int j = 0;
+while (dest[i] != '\0')
 {
-if (dest[i] != '\0')
+i++;
+}
+while (src[j] != '\0' && j < n)
 {
-dest[i] = src[i];
+dest[i] = src[j];
+j++;
 }
-else
-{
-break;
-}
-}
+return (dest);
 }
