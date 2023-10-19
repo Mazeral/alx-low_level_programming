@@ -8,19 +8,17 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-char *concated[99];
 int i = 0;
-int l = 0;
-for (; dest[i] != '\0'; i++)
+int j = 0;
+while (dest[i] != '\0')
 {
-concated[i] = dest[i];
-l++;
+i++;
 }
-i = 0;
-for (; src[i] != && i < n '\0'; i++)
+while (src[j] != '\0' && j < n)
 {
-concated[l] = src[i];
+dest[i] = src[j];
+i++;
+j++;
 }
-return (concated);
-}
+return (dest);
 }
