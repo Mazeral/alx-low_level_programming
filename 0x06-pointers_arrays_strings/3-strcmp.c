@@ -18,5 +18,5 @@ if (sum != 0)
 break;
 i++;
 }
-return (sum)
+return (sum);
 }
