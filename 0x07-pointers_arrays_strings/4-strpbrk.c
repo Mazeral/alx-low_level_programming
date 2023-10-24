@@ -23,7 +23,7 @@ break;
 if (accept[j] == s[i])
 break;
 }
-if (accept[j] != s[i])
+if (s[i] == '\0')
 return (NULL);
 return (s + i);
 }
