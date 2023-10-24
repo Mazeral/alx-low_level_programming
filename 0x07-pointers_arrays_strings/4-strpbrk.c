@@ -23,5 +23,7 @@ break;
 if (accept[j] == s[i])
 break;
 }
+if (accept[j] != s[i])
+return (NULL);
 return (s + i);
 }
