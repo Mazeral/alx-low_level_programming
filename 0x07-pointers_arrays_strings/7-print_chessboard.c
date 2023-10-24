@@ -16,7 +16,7 @@ for (; i < 8; i++)
 {
 for (j = 0; j < 8; j++)
 {
-printf("%c", b[i][j]);
+printf("%c", a[i][j]);
 }
 }
 }
