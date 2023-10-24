@@ -8,7 +8,7 @@
  * Return: The board
  */
 
-void print_chessboard(char b(*a)[8])
+void print_chessboard(char (*a)[8])
 {
 int j;
 int i = 0;
