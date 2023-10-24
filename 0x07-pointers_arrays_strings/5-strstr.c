@@ -2,7 +2,11 @@
 #include<stdbool.h>
 #include "main.h"
 /**
- * */
+ * _strstr - a function to find a substring
+ * @haystack: where to find
+ * @needle: what to find
+ * Return: either null or the substring
+ */
 char *_strstr(char *haystack, char *needle)
 {
 
