@@ -21,7 +21,7 @@ if (i * i > n)
 {
 return (1);
 }
-return isPrimeRecursive(n, i + 1);
+return (isPrimeRecursive(n, i + 1));
 }
 
 /**
@@ -31,5 +31,5 @@ return isPrimeRecursive(n, i + 1);
  */
 int is_prime_number(int n)
 {
-return isPrimeRecursive(n, 2);
+return (isPrimeRecursive(n, 2));
 }
