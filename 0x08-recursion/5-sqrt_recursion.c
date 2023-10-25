@@ -8,13 +8,13 @@
  */
 int sqrtRecursive(int n, int i)
 {
-if (i * i >= n) 
+if (i * i >= n)
 {
-return i;
+return (i);
 }
 else
 {
-return sqrtRecursive(n, i + 1);
+return (sqrtRecursive(n, i + 1));
 }
 }
 
