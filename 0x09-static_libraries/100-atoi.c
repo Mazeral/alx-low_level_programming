@@ -1,5 +1,6 @@
 /**
  * _atoi - a function
+ * @s: string
  * Return: 0 success
  */
 
