@@ -1,10 +1,7 @@
 /**
  * _atoi - a function
  * @s: string
- * Return: 0 success
+ * Return: success
  */
 
-int _atoi(char *s)
-{
-return (0);
-}
+int _atoi(char *s);
