@@ -1,9 +1,9 @@
 /**
  * _atoi - a function
- * Return: Nothing
+ * Return: 0 success
  */
 
-void _atoi(void)
+int _atoi(char *s)
 {
-return;
+return (0);
 }
