@@ -1,9 +1,9 @@
 /**
- * atoi - a function
+ * _atoi - a function
  * Return: Nothing
  */
 
-void atoi(void)
+void _atoi(void)
 {
 return;
 }
