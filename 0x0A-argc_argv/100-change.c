@@ -18,6 +18,11 @@ int changes[] = {25, 10, 5, 1};
 if (argc == 2)
 {
 c = atoi(argv[1]);
+if (c < 0)
+{
+printf("0\n");
+return (0);
+}
 while (i < 4)
 {
 if (c - changes[i] < 0)
