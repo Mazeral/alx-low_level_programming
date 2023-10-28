@@ -34,7 +34,7 @@ return (0);
 }
 while (i < 4)
 {
-if (c - changes[i] < 0)
+if (c - changes[i] <= 0)
 i++;
 else
 {
