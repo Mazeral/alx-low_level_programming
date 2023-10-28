@@ -31,7 +31,7 @@ sum += atoi(argv[i]);
 }
 else
 {
-printf("0\n");
+return (0);
 }
 printf("%d\n", sum);
 return (0);
