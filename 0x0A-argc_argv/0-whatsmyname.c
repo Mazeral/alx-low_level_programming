@@ -3,7 +3,7 @@
  * main - the entry points
  * @argc: Argument count
  * @argv: The vector of arguemtns
- * @Return: Always success
+ * Return: Always success
  */
 
 int main(int argc, char *argv[])
