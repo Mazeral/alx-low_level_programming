@@ -20,7 +20,7 @@ if (argc == 2)
 {
 for (j = 0; argv[1][j] != '\0'; j++)
 {
-if (isdigit(argv[1][j]) == 0 || argv[1][0] == "\0")
+if (isdigit(argv[1][j]) == 0)
 {
 printf("Error\n");
 return (1);
