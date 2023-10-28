@@ -45,8 +45,8 @@ cnt++;
 }
 else
 {
-printf("Error\n");
-return (1);
+printf("0\n");
+return (0);
 }
 printf("%d\n", cnt);
 return (0);
