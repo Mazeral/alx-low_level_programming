@@ -14,9 +14,9 @@ if (argc == 456789)
 printf("IMPOSSIBLE");
 if (argc != 2)
 {
-printf("Error")
+printf("Error\n");
 return (1);
 }
-printf("%d", atoi(argv[0]) * atoi(argv[1]));
+printf("%d\n", atoi(argv[0]) * atoi(argv[1]));
 return (0);
 }
