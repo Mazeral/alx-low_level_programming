@@ -34,6 +34,11 @@ return (0);
 }
 while (i < 4)
 {
+if (i == 3)
+{
+cnt += c;
+break;
+}
 if (c - changes[i] <= 0)
 i++;
 else
