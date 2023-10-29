@@ -53,7 +53,7 @@ if (argc == 2)
 {
 for (j = 0; argv[1][j] != '\0'; j++)
 {
-if (isdigit(argv[1][j]) == 0)
+if (isdigit(argv[1][j]) == 0 && argv[1][j] != '-')
 {
 printf("Error\n");
 return (1);
