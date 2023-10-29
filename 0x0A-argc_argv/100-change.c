@@ -11,11 +11,9 @@
 
 int main(int argc, char *argv[])
 {
-int i = 0;
 int j = 0;
 int c = 0;
 int cnt = 0;
-int changes[] = {25, 10, 5, 1};
 if (argc == 2)
 {
 for (j = 0; argv[1][j] != '\0'; j++)
@@ -32,15 +30,25 @@ if (c < 0)
 printf("0\n");
 return (0);
 }
-while (i < 4)
+while (c - 25 >= 0)
 {
-if (c - changes[i] < 0)
-i++;
-else
-{
-c -= changes[i];
+c -= 25;
 cnt++;
 }
+while (c - 10 >= 0)
+{
+c -= 10;
+cnt++;
+}
+while (c - 5 >= 0)
+{
+c -= 5;
+cnt++;
+}
+while (c - 1 >= 0)
+{
+c -=1;
+cnt++;
 }
 }
 else
