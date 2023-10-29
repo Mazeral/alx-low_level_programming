@@ -10,21 +10,25 @@
 int count_change(int c)
 {
 int cnt = 0;
+if (c - 25 >= 0)
 while (c - 25 >= 0)
 {
 c -= 25;
 cnt++;
 }
+if (c - 10 >= 0)
 while (c - 10 >= 0)
 {
 c -= 10;
 cnt++;
 }
+if (c - 5 >= 0)
 while (c - 5 >= 0)
 {
 c -= 5;
 cnt++;
 }
+if (c - 1 >= 0)
 while (c - 1 >= 0)
 {
 c -= 1;
