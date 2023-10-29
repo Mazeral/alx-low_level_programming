@@ -3,6 +3,37 @@
 #include<stdlib.h>
 
 /**
+ * count_change - conunts the change of the money
+ * @c: The money
+ * Return: The change amount
+ */
+int count_change(int c)
+{
+int cnt = 0;
+while (c - 25 >= 0)
+{
+c -= 25;
+cnt++;
+}
+while (c - 10 >= 0)
+{
+c -= 10;
+cnt++;
+}
+while (c - 5 >= 0)
+{
+c -= 5;
+cnt++;
+}
+while (c - 1 >= 0)
+{
+c -= 1;
+cnt++;
+}
+return (cnt);
+}
+
+/**
  * main - The entry point.
  * @argc: The count of arguemtns.
  * @argv: The vector of arguments
@@ -30,26 +61,7 @@ if (c < 0)
 printf("0\n");
 return (0);
 }
-while (c - 25 >= 0)
-{
-c -= 25;
-cnt++;
-}
-while (c - 10 >= 0)
-{
-c -= 10;
-cnt++;
-}
-while (c - 5 >= 0)
-{
-c -= 5;
-cnt++;
-}
-while (c - 1 >= 0)
-{
-c -=1;
-cnt++;
-}
+cnt = count_change(c);
 }
 else
 {
