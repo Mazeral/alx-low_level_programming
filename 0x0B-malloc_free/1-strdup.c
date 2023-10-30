@@ -13,7 +13,6 @@ char *dupstr;
 size_t size;
 if (str == NULL)
 {
-printf("failed to allocate memory\n");
 return (NULL);
 }
 size = strlen(str);
