@@ -17,12 +17,12 @@ if (s1 == NULL && s2 == NULL)
 {
 return ("");
 }
-else if (strlen(s1) > 0 && s2 == NULL)
+else if (s1 != NULL > 0 && s2 == NULL)
 {
 return (s1);
 }
 
-else if (s1 == NULL && strlen(s2) > 0)
+else if (s1 == NULL && s2 != NULL)
 {
 return (s2);
 }
