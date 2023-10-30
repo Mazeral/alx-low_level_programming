@@ -19,7 +19,7 @@ return (NULL);
 }
 
 concated = malloc(size);
-if (concated)
+if (concated == NULL)
 {
 return (NULL);
 }
