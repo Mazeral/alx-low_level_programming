@@ -9,28 +9,16 @@
  */
 char *str_concat(char *s1, char *s2)
 {
+
 char *concated;
 int i = 0;
 int j = 0;
 size_t size = 1 + strlen(s1) + strlen(s2);
-if (s1 == NULL && s2 == NULL)
-{
-return ("");
-}
-else if (s1 != NULL && s2 == NULL)
-{
-return (s1);
-}
-
-else if (s1 == NULL && s2 != NULL)
-{
-return (s2);
-}
-concated = malloc(size);
-if (concated == NULL)
-{
-return (NULL);
-}
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+if 
 for (; s1[i] != '\0'; i++)
 {
 concated[i] = s1[i];
