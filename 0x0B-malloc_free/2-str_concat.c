@@ -9,7 +9,7 @@
  */
 char *check_null(char *s1, char *s2)
 {
-size_t size;2
+size_t size;
 char *concated;
 if (s1 == NULL && s2 == NULL)
 {
