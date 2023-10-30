@@ -37,10 +37,13 @@ int j = 0;
 size_t size;
 if (s1 == NULL || s2 == NULL)
 {
+if (check_null(s1, s2) != NULL)
+{
 char *check = malloc(strlen(check_null(s1, s2)));
 check = check_null(s1, s2);
 if (check[0] != '\0')
 return (check);
+}
 }
 size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
