@@ -13,11 +13,29 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size = 1 + strlen(s1) + strlen(s2);
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
+if (s1 == NULL && s2 == NULL)
+{
+concated = '\0'
+return (concated);
+}
+else if (s1 != NULL && s2 == NULL)
+{
 concated = malloc(size);
+strcpy(concated, s2);
+return (concated);
+}
+
+else if (s1 == NULL && s2 != NULL)
+{
+concated = malloc(size);
+strcpy(concated, s1);
+return (concated);
+}
+concated = malloc(size);
+if (concated == NULL)
+{
+return (NULL);
+}
 for (; s1[i] != '\0'; i++)
 {
 concated[i] = s1[i];
