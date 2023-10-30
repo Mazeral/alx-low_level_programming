@@ -25,7 +25,6 @@ concated = malloc(size);
 strcpy(concated, s1);
 return (concated);
 }
-
 else if (s1 == NULL && s2 != NULL)
 {
 size = 1 + strlen(s2);
@@ -33,7 +32,6 @@ concated = malloc(size);
 strcpy(concated, s2);
 return (concated);
 }
-
 size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
 if (concated == NULL)
