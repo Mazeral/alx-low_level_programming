@@ -13,8 +13,6 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size = 1 + strlen(s1) + strlen(s2);
-int size1 = strlen(s1);
-int size2 = strlen(s2);
 if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
