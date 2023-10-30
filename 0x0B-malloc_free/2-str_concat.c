@@ -29,10 +29,6 @@ concated = malloc(size);
 strcpy(concated, s2);
 return (concated);
 }
-if (concated == NULL)
-{
-return (NULL);
-}
 return ('\0');
 }
 /**
