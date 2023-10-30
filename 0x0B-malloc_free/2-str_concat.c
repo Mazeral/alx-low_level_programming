@@ -16,7 +16,7 @@ size_t size;
 if (s1 == NULL && s2 == NULL)
 {
 concated = malloc(1);
-concated = "";
+concated = '\0';
 return (concated);
 }
 else if (s1 != NULL && s2 == NULL)
