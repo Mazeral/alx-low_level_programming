@@ -20,6 +20,8 @@ if (size == 0)
 return (NULL);
 charr = malloc(s * sizeof(char));
 for (; i < s; i++)
-charr[i] == c;
+{
+charr[i] = c;
+}
 return (charr);
 }
