@@ -23,5 +23,6 @@ for (; i < s; i++)
 {
 charr[i] = c;
 }
+free(charr);
 return (charr);
 }
