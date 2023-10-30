@@ -9,7 +9,7 @@
  */
 char *check_null(char *s1, char *s2)
 {
-size_t size;
+size_t size;2
 char *concated;
 if (s1 == NULL && s2 == NULL)
 {
@@ -48,7 +48,7 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size;
-check_null(s1, s2);
+size = 1 + strlen(s1) + strlen(s2);
 for (; s1[i] != '\0'; i++)
 {
 concated[i] = s1[i];
