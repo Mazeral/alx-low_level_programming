@@ -21,7 +21,7 @@ else if (s1 == NULL && s2 != NULL)
 {
 return (s2);
 }
-return ('\0');
+return ("");
 }
 /**
  * str_concat - Concats 2 strings togther
