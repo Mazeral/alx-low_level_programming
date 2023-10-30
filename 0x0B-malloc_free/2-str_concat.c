@@ -29,12 +29,11 @@ concated = malloc(size);
 strcpy(concated, s2);
 return (concated);
 }
-size = 1 + strlen(s1) + strlen(s2);
-concated = malloc(size);
 if (concated == NULL)
 {
 return (NULL);
 }
+return ('\0');
 }
 /**
  * str_concat - Concats 2 strings togther
@@ -48,7 +47,9 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size;
+check_null(s1, s2);
 size = 1 + strlen(s1) + strlen(s2);
+concated = malloc(size);
 for (; s1[i] != '\0'; i++)
 {
 concated[i] = s1[i];
