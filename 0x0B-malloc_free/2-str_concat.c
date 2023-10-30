@@ -15,9 +15,17 @@ int j = 0;
 size_t size = 1 + strlen(s1) + strlen(s2);
 if (s1 == NULL && s2 == NULL)
 {
-return (NULL);
+return ("");
+}
+else if(s1 && s2 == NULL)
+{
+return (s1);
 }
 
+else if(s1 == NULL && s2)
+{
+return (s2);
+}
 concated = malloc(size);
 if (concated == NULL)
 {
