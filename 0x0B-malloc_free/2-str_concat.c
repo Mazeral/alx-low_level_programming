@@ -9,7 +9,6 @@
  */
 char *check_null(char *s1, char *s2)
 {
-size_t size;
 if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
