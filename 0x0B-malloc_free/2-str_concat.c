@@ -17,12 +17,12 @@ if (s1 == NULL && s2 == NULL)
 {
 return ("");
 }
-else if(s1 && s2 == NULL)
+else if (s1 && s2 == NULL)
 {
 return (s1);
 }
 
-else if(s1 == NULL && s2)
+else if (s1 == NULL && s2)
 {
 return (s2);
 }
