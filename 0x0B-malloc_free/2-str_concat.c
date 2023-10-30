@@ -43,7 +43,9 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size;
-check_null(s1, s2);
+char *check = check_null(s1, s2);
+if (check != '\0')
+return (check);
 size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
 for (; s1[i] != '\0'; i++)
