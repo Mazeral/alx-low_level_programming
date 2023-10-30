@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 char *concated;
 int i = 0;
 int j = 0;
-size_t size = 1 + strlen(s1) + strlen(s2);
+size_t size;
 if (s1 == NULL && s2 == NULL)
 {
 concated = '\0';
@@ -20,17 +20,21 @@ return (concated);
 }
 else if (s1 != NULL && s2 == NULL)
 {
+size = 1 + strlen(s1);
 concated = malloc(size);
-strcpy(concated, s2);
+strcpy(concated, s1);
 return (concated);
 }
 
 else if (s1 == NULL && s2 != NULL)
 {
+size = 1 + strlen(s2);
 concated = malloc(size);
-strcpy(concated, s1);
+strcpy(concated, s2);
 return (concated);
 }
+
+size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
 if (concated == NULL)
 {
