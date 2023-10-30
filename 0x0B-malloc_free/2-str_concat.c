@@ -4,7 +4,7 @@
 /**
  * check_null -  a function to check the null values in the parameters
  * @s1: The first param
- * s2: The second param
+ * @s2: The second param
  * Return: Depending on the values
  */
 char *check_null(char *s1, char *s2)
