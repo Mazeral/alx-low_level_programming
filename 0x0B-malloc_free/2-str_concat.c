@@ -17,7 +17,7 @@ if (s1 == NULL && s2 == NULL)
 {
 return ("");
 }
-else if (s1 != NULL > 0 && s2 == NULL)
+else if (s1 != NULL && s2 == NULL)
 {
 return (s1);
 }
