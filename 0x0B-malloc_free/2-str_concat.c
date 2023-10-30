@@ -44,7 +44,7 @@ int i = 0;
 int j = 0;
 size_t size;
 char *check = check_null(s1, s2);
-if (check != '\0')
+if (*check != '\0')
 return (check);
 size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
