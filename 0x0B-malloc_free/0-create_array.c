@@ -19,10 +19,11 @@ size_t s = size;
 if (size == 0)
 return (NULL);
 charr = malloc(s * sizeof(char));
+if (charr == NULL)
+return (NULL);
 for (; i < s; i++)
 {
 charr[i] = c;
 }
-free(charr);
 return (charr);
 }
