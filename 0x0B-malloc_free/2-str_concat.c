@@ -2,17 +2,13 @@
 #include <stdlib.h>
 #include<string.h>
 /**
- * str_concat - Concats 2 strings togther
- * @s1: First string
- * @s2: Second string
- * Return: Null in case of failure or the concated string
+ * check_null -  a function to check the null values in the parameters
+ * @s1: The first param
+ * @s2: The second param
+ * Return: Depending on the values
  */
-char *str_concat(char *s1, char *s2)
+char *check_null(char *s1, char *s2)
 {
-char *concated;
-int i = 0;
-int j = 0;
-size_t size;
 if (s1 == NULL && s2 == NULL)
 {
 return (NULL);
@@ -37,6 +33,20 @@ if (concated == NULL)
 {
 return (NULL);
 }
+}
+/**
+ * str_concat - Concats 2 strings togther
+ * @s1: First string
+ * @s2: Second string
+ * Return: Null in case of failure or the concated string
+ */
+char *str_concat(char *s1, char *s2)
+{
+char *concated;
+int i = 0;
+int j = 0;
+size_t size;
+check_null(s1, s2);
 for (; s1[i] != '\0'; i++)
 {
 concated[i] = s1[i];
