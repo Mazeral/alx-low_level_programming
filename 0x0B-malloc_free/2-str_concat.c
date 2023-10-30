@@ -15,6 +15,7 @@ int j = 0;
 size_t size;
 if (s1 == NULL && s2 == NULL)
 {
+concated = malloc(1);
 concated = "";
 return (concated);
 }
