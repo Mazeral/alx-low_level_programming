@@ -15,7 +15,7 @@ int j = 0;
 size_t size = 1 + strlen(s1) + strlen(s2);
 if (s1 == NULL && s2 == NULL)
 {
-concated = '\0'
+concated = '\0';
 return (concated);
 }
 else if (s1 != NULL && s2 == NULL)
