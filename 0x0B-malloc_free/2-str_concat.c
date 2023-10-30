@@ -41,8 +41,11 @@ if (check_null(s1, s2) != NULL)
 {
 char *check = malloc(strlen(check_null(s1, s2)));
 check = check_null(s1, s2);
-if (check[0] != '\0')
 return (check);
+}
+else
+{
+return (NULL);
 }
 }
 size = 1 + strlen(s1) + strlen(s2);
