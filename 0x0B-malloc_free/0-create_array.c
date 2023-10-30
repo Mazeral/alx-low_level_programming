@@ -13,7 +13,7 @@
 
 char *create_array(unsigned int size, char c)
 {
-int i = 0;
+size_t i = 0;
 char *charr;
 size_t s = size;
 if (size == 0)
