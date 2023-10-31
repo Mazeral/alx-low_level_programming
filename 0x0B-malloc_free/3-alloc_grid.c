@@ -17,30 +17,12 @@ free(grid);
 return (NULL);
 }
 for (i = 0; i < height; i++)
-{
 grid[i] = malloc(width * sizeof(int *));
-if (grid[i] == NULL)
-{
-free(grid);
-return (NULL);
-}
-}
 
 for (i = 0; i < height; i++)
 for (; j < width; j++)
 grid[i][j] = 0;
 
-for (; j < width; j++)
-{
-if (grid[j] == NULL)
-{
-for (i = 0; i < height; i++)
-{
-for (j = 0; j < width; j++)
-free(grid[i][j]);
-}
-}
-}
 if (grid == NULL)
 {
 free(grid);
