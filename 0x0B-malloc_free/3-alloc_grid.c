@@ -23,10 +23,14 @@ for (i = 0; i < height; i++)
 {
 if (grid[i] == NULL)
 for (i = 0; i < height; i++)
-free(grid[i]);
+if (grid[i] == NULL)
+{
+free(grid);
+for (j = 0; j <= i; j++)
+free(grid[j]);
+return (NULL);
 }
-
-
+}
 
 for (i = 0; i < height; i++)
 for (; j < width; j++)
