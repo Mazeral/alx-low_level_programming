@@ -11,11 +11,11 @@
 
 char *argstostr(int ac, char **av)
 {
-if (ac == 0 || av == NULL)
-return (NULL);
 int i = 0;
 char *s;
 size_t size = 0;
+if (ac == 0 || av == NULL)
+return (NULL);
 for (; i < ac; i++)
 size += strlen(av[i]);
 
