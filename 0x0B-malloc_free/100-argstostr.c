@@ -3,10 +3,10 @@
 #include<string.h>
 
 /**
- * argstostr - concats all args
+ * argstostr - strcats all args
  * @ac: Argument count
  * @av: Argument vector
- * Return: The concated string
+ * Return: The strcated string
  */
 
 char *argstostr(int ac, char **av)
@@ -23,8 +23,8 @@ s = (char *) malloc(size + ac + 1);
 
 for (i = 0; i < ac; i++)
 {
-concat(s, av[i]);
-concat(s, '\n');
+strcat(s, av[i]);
+strcat(s, '\n');
 }
 s[size + ac] = '\0';
 
