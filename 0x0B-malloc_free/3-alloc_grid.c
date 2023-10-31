@@ -20,7 +20,7 @@ for (i = 0; i < height; i++)
 for (; j < width; j++)
 grid[i][j] = 0;
 
-if(grid == NULL)
+if (grid == NULL)
 return (NULL);
 
 return (grid);
