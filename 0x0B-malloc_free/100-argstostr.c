@@ -24,7 +24,7 @@ s = (char *) malloc(size + ac + 1);
 for (i = 0; i < ac; i++)
 {
 strcat(s, av[i]);
-strcat(s, '\n');
+strcat(s, "\n");
 }
 s[size + ac] = '\0';
 
