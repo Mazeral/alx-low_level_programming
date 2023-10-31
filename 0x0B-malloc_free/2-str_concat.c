@@ -13,12 +13,10 @@ char *concated;
 int i = 0;
 int j = 0;
 size_t size;
-char *str1 = s1;
-char *str2 = s2;
-if (str1 == NULL)
-str1 = "";
-if (str2 == NULL)
-str2 = "";
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
 size = 1 + strlen(s1) + strlen(s2);
 concated = malloc(size);
 if (concated == NULL)
