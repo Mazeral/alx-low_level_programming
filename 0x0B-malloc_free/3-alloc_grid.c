@@ -20,6 +20,15 @@ for (i = 0; i < height; i++)
 grid[i] = malloc(width * sizeof(int *));
 
 for (i = 0; i < height; i++)
+{
+if (grid[i] == NULL)
+for (i = 0; i < height; i++)
+free(grid[i]);
+}
+
+
+
+for (i = 0; i < height; i++)
 for (; j < width; j++)
 grid[i][j] = 0;
 
