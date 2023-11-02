@@ -8,7 +8,7 @@
  * Return: The array from min to max if success, NULL in case of failure
  */
 
-int *array_range(int min, int max);
+int *array_range(int min, int max)
 {
 int size = max - min;
 int i = 0;
