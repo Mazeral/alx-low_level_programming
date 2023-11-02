@@ -35,5 +35,7 @@ i++;
 }
 
 s[i] = '\0';
+if(s == NULL)
+return (NULL);
 return (s);
 }
