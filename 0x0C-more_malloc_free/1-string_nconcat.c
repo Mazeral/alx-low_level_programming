@@ -22,7 +22,7 @@ return (s1);
 for (; i < strlen(s1); i++)
 s[i] = s1[i];
 
-for (; j < n && n < strlen(s2); j++)
+for (; j < n && j < strlen(s2); j++)
 {
 s[i] = s2[j];
 i++;
