@@ -12,7 +12,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 int i = 0;
 void *p = malloc(nmemb * size);
 memset(ptr, 0, nmemb * size);
-if (p == NULL);
+if (p == NULL)
 return (NULL);
 return (p);
 }
