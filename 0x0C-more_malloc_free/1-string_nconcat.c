@@ -2,7 +2,7 @@
 #include<stdio.h>
 
 /**
- * string_nconcat - a function that concats a stirng and the n chars of the second string
+ * string_nconcat - a function that concats a str and the n chars of the second str
  * @s1: The first string
  * @s2: The second string
  * @n: The letters of the second string
