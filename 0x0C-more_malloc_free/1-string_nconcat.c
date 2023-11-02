@@ -23,14 +23,15 @@ if (n == 0)
 return (s1);
 size = strlen(s1) + n;
 s = malloc(strlen(s1) + n + 1);
-for (; i < strlen(s1); i++)
+for (; s1[i] != '\0'; i++)
 s[i] = s1[i];
 
-for (; j < n && j < strlen(s2); j++)
+for (; j < n && j < s2[j] != '\0'; j++)
 {
 s[i] = s2[j];
 i++;
 }
+size = strlen(s);
 s[size] = '\0';
 if (s == NULL)
 return (NULL);
