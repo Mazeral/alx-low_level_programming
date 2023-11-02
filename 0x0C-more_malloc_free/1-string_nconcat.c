@@ -26,7 +26,7 @@ s = malloc(strlen(s1) + n + 1);
 for (; s1[i] != '\0'; i++)
 s[i] = s1[i];
 
-for (; j < n && j < s2[j] != '\0'; j++)
+for (; j < n && s2[j] != '\0'; j++)
 {
 s[i] = s2[j];
 i++;
