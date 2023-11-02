@@ -15,7 +15,6 @@ unsigned int j = 0;
 unsigned int i = 0;
 unsigned int size = 0;
 char *s = NULL;
-
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
@@ -27,13 +26,16 @@ size = strlen(s1) + strlen(s2) + 1;
 s = malloc(sizeof(char) * (size + 1));
 if (s == NULL)
 return (NULL);
+
 for (i = 0; s1[i] != '\0'; i++)
 s[i] = s1[i];
+
 for (j = 0; j < n && s2[j] != '\0'; j++)
 {
-s[j + i] = s2[j];
-}
-s[size] = '\0';
-return (s);
+s[i] = s2[j];
+i++;
 }
 
+s[i] = '\0';
+return (s);
+}
