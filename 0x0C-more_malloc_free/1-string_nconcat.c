@@ -30,7 +30,7 @@ s[i] = s2[j];
 i++;
 }
 s[i] = '\0';
-if(s == NULL)
+if (s == NULL)
 return (NULL);
 return (s);
 }
