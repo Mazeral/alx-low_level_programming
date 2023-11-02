@@ -25,8 +25,8 @@ for (; j < n && n < strlen(s2); j++)
 s[i] = s2[j];
 i++;
 }
+s[size] = '\0';
 if (s == NULL)
 return (NULL);
-s[size] = '\0';
 return (s);
 }
