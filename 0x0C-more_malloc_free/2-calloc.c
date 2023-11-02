@@ -13,4 +13,5 @@ int i = 0;
 void *p = malloc(nmemb * size);
 for (; i < nmemb; i++)
 p[i] = 0;
+return (p);
 }
