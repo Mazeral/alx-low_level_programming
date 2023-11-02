@@ -21,4 +21,5 @@ for (; i < size && min <= max; i++)
 arr[i] = min;
 min++;
 }
+return (arr);
 }
