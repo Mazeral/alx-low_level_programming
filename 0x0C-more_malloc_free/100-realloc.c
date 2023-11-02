@@ -26,4 +26,5 @@ if (old_size == new_size)
 return (ptr);
 if (new_size == 0)
 return (NULL);
+return (p);
 }
