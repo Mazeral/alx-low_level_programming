@@ -1,4 +1,5 @@
 #ifndef _MAIN_H
 #define _MAIN_H
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
