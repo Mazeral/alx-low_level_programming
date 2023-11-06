@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#define FILENAME _FILE_
+#define FILENAME __FILE__
 
 /**
  * main - the entry point
