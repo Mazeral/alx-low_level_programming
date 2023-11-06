@@ -1,6 +1,5 @@
 #include<stdlib.h>
 #define FILENAME __FILE__
-
 /**
  * main - the entry point
  * Return: Success
@@ -8,6 +7,7 @@
 
 int main(void)
 {
-printf("%s\n", _FILE_);
+char *s = __FILE__;
+printf("%s\n", s);
 return (0);
 }
