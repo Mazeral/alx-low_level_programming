@@ -7,7 +7,7 @@
 
 int main(void)
 {
-char *s = __FILE__;
+char *s = FILENAME;
 printf("%s\n", s);
 return (0);
 }
