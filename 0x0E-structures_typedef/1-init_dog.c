@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "dog.h"
-#include"main.h"
 /**
  * init_dog - The entry point
  * @d: The pointer for the struc
