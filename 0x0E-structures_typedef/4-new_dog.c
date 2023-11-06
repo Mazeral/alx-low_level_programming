@@ -12,10 +12,13 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+dog_t dog;
 char *dog_name = name;
 char *owner_name = owner;
 if (name == NULL || owner == NULL)
 return (NULL);
-dog_t dog = {dog_name, age, owner_name};
+dog->name = dog_name;
+dog->age = age;
+dog->owner = owner_name;
 return (dog);
 }
