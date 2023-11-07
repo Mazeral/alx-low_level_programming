@@ -30,5 +30,8 @@ strcpy(owner_name, owner);
 new_dog->name = dog_name;
 new_dog->owner = owner_name;
 
+if (new_dog == NULL)
+return (NULL);
+
 return (new_dog);
 }
