@@ -30,5 +30,5 @@ strcpy(owner_name, owner);
 new_dog->name = dog_name;
 new_dog->owner = owner_name;
 
-return (dog);
+return (new_dog);
 }
