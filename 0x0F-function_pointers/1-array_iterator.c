@@ -13,11 +13,5 @@ if (array == NULL || action == NULL)
 return;
 
 for(; i < size; i++)
-{
-if (action(array[i] == NULL)
-return;
-else
 action(array[i]);
-)
-}
 }
