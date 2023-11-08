@@ -25,9 +25,9 @@ exit(98);
 
 while (i < 5)
 {
-if (s == ops[i][0])
+if (s == ops.op)
 {
-if (ops[i][0] == '/' || ops[i][0] == '%')
+if (ops[i].op == '/' || ops[i].op == '%')
 {
 if (y == 0)
 {
@@ -35,7 +35,7 @@ printf("Error\n");
 exit(100);
 }
 }
-return (ops[i][1](int, int));
+return (ops[i].f(int, int));
 }
 i++;
 }
