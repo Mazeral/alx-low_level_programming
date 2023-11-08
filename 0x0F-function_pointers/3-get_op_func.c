@@ -35,7 +35,7 @@ printf("Error\n");
 exit(100);
 }
 }
-return (ops[i].f(int, int));
+return (ops[i].f(x, y));
 }
 i++;
 }
