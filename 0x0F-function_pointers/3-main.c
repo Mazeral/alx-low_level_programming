@@ -23,11 +23,6 @@ if (get_op_func(argv[2]) == NULL)
 printf("Error\n");
 exit(99);
 }
-if (argv[3] == "0")
-{
-printf("Error\n");
-exit(100);
-}
 
 int (*get_op_func(char *s))(int, int);
 
