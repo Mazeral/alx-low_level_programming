@@ -17,29 +17,12 @@ op_t ops[] = {
 };
 
 int i;
-if (s[1] != '\0')
-{
-printf("Error\n");
-exit(98);
-}
-
 while (i < 5)
 {
 if (s == ops.op)
 {
-if (ops[i].op == '/' || ops[i].op == '%')
-{
-if (y == 0)
-{
-printf("Error\n");
-exit(100);
-}
-}
 return (ops[i].f(x, y));
 }
 i++;
 }
-
-printf("Error\n");
-exit(99);
 }
