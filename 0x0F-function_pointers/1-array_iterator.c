@@ -15,7 +15,7 @@ return;
 for(; i < size; i++)
 {
 if (action(array[i] == NULL)
-;
+return;
 else
 action(array[i]);
 )
