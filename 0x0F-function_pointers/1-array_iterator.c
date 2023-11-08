@@ -13,5 +13,11 @@ if (array == NULL || action == NULL)
 return;
 
 for(; i < size; i++)
+{
+if (action(array[i] == NULL)
+;
+else
 action(array[i]);
+)
+}
 }
