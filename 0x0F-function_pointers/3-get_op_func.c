@@ -19,9 +19,9 @@ op_t ops[] = {
 int i;
 while (i < 5)
 {
-if (s == ops.op)
+if (s == ops->op)
 {
-return (ops[i].f(x, y));
+return (ops[i].f);
 }
 i++;
 }
