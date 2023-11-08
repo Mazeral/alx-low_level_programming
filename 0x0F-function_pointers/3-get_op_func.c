@@ -7,6 +7,8 @@
  */
 int (*get_op_func(char *s))(int x, int y)
 {
+
+int i = 0;
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},
@@ -16,7 +18,6 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-int i;
 while (i < 5)
 {
 if (s == ops->op)
@@ -25,4 +26,6 @@ return (ops[i].f);
 }
 i++;
 }
+
+return (ops[i].f);
 }
