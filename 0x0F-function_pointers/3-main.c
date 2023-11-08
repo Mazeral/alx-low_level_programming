@@ -13,18 +13,18 @@ int main(int argc, char *argv[])
 {
 int result;
 int op;
-if (argc > 3)
+if (argc > 5)
 {
 printf("Error\n");
 exit(98);
 }
-if (argv[1] != '/' || argv[1] != '+' ||
-argv[0] != '-' || argv[1] != '*' || argv[1] != '%')
+if (argv[2] != '/' || argv[2] != '+' ||
+argv[2] != '-' || argv[2] != '*' || argv[2] != '%')
 {
 printf("Error\n");
 exit(99);
 }
-if (argv[2] == '0')
+if (argv[3] == '0')
 {
 printf("Error\n");
 exit(100);
@@ -32,7 +32,7 @@ exit(100);
 
 int (*get_op_func(char *s))(int, int);
 
-op = get_op_func(argv[1]);
+op = get_op_func(argv[2]);
 result = op(atoi(x), atoi(y));
 printf("%d", result);
 return (0);
