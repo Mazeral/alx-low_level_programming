@@ -2,9 +2,7 @@
 #include "calc.h"
 /**
  * get_op_func - a function that gets the right operation
- * @c: The operation
- * @int: The first int
- * @int: The second int
+ * @s: The operation
  * Return: error or success
  */
 int (*get_op_func(char *s))(int, int)
