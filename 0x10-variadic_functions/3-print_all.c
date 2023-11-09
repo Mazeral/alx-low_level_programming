@@ -35,4 +35,5 @@ printf('%s', va_arg(args, char*));
 }
 i++;
 }
+va_end(args);
 }

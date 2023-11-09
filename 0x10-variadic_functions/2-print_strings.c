@@ -39,4 +39,5 @@ printf("%s", s);
 }
 end++;
 }
+va_end(args);
 }

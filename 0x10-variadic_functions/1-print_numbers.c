@@ -24,4 +24,5 @@ _putchar(separator);
 _putchar(' ');
 }
 }
+va_end(args);
 }
