@@ -3,7 +3,7 @@
 #include<stdarg.h>
 /**
  * print_numbers - prints all numbers seperated with the seperator
- * @seperator: The seperator of the numbers
+ * @separator: The separator of the numbers
  * @n: The number of arguments
  * Return: Nothing
  */
@@ -12,12 +12,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 va_list args;
 va_start(args, n);
 int i = 0;
-
-while (i < n)
+for (; i < n; i++)
 {
-if (i < n - 1);
-printf("%d%c ", va_arg(args, int), seperator);
+if (i + 1 == n)
+printf("%d", va_arg(args, int));
 else
-printf("%d%c", va_args(args, int), seperator);
+printf("%d%s ", va_arg(args, int), separator);
 }
 }
