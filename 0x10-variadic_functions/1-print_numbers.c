@@ -20,6 +20,7 @@ else
 {
 _putchar(va_arg(args, int));
 _putchar(separator);
+_putchar(' ');
 }
 }
 }
