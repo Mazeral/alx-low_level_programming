@@ -15,8 +15,11 @@ int i = 0;
 for (; i < n; i++)
 {
 if (i + 1 == n)
-printf("%d", va_arg(args, int));
+_putchar(va_arg(args, int));
 else
-printf("%d%s ", va_arg(args, int), separator);
+{
+_putchar(va_arg(args, int));
+_putchar(separator);
+}
 }
 }
