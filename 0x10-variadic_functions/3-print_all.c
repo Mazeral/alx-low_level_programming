@@ -16,10 +16,6 @@ int i = 0;
 const char * const f = format;
 while (format[i] != '\0')
 {
-// c: char
-// i: integer
-// f: float
-// s: char *
 if (format[i] == 'c')
 {
 printf('%c', va_arg(args, int));
