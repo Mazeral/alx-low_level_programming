@@ -10,5 +10,32 @@
 
 void print_all(const char * const format, ...)
 {
-
+va_list args;
+va_start(args, format);
+int i = 0;
+const char * const f = format;
+while (format[i] != '\0')
+{
+// c: char
+// i: integer
+// f: float
+// s: char *
+if (format[i] == 'c')
+{
+printf('%c', va_arg(args, int));
+}
+if (format[i] == 'i')
+{
+printf('%d,' va_arg(args, int));
+}
+if (format[i] == 'f')
+{
+printf('%f', va_arg(args, double));
+}
+if (format[i] == 's')
+{
+printf('%s', va_arg(args, char*));
+}
+i++;
+}
 }
