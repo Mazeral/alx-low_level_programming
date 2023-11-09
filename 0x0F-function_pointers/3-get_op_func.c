@@ -18,7 +18,7 @@ op_t ops[] = {
 {NULL, NULL}
 };
 
-while (i < 5)
+while (ops[i].op != NULL)
 {
 if (s == ops[i].op)
 {
@@ -26,6 +26,6 @@ return (ops[i].f);
 }
 i++;
 }
-
-return (ops[i].f);
+printf("Error\n");
+exit(99);
 }
