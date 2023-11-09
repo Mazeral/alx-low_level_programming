@@ -20,4 +20,3 @@ for (; i < n; i++)
 sum += va_arg(args, int);
 return (sum);
 }
-
