@@ -10,20 +10,16 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int i = 0;
-unsigned int one = 1;
-va_list args;
-va_start(args, n);
-for (; i < n; i++)
+va_list valist;
+unsigned int count;
+
+va_start(valist, n);
+for (count = 0; count < n; count++)
 {
-if (i + one == n)
-_putchar(va_arg(args, int));
-else
-{
-_putchar(va_arg(args, int));
-_putchar(separator);
-_putchar(' ');
+printf("%d", va_arg(valist, const unsigned int));
+if (separator != NULL && count != (n - 1))
+printf("%s", separator);
 }
-}
-va_end(args);
+printf("\n");
+va_end(valist);
 }
