@@ -15,6 +15,6 @@ next->str = malloc(sizeof(str));
 strcpy(next->str, str);
 next->len = strlen(str);
 
-(*head) = next
-return (head);
+(*head) = next;
+return ((*head));
 }
