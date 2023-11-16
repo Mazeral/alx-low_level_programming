@@ -15,7 +15,7 @@ list_t *node = malloc(sizeof(list_t));
 int len = 0;
 
 if (str == NULL)
-retrun (NULL);
+return (NULL);
 while (str[len])
 len++;
 
