@@ -27,7 +27,7 @@ return (NULL);
 
 if (bgn == NULL)
 {
-bgn = node;
+*head = node;
 return (node);
 }
 
