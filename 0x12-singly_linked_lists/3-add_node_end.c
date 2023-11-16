@@ -4,7 +4,7 @@
  * add_node_end - adds nodes to the end
  * @head: the head of the linked list
  * @str: The value
- * Retrun: The address of the head
+ * Return: The address of the head
  */
 
 
