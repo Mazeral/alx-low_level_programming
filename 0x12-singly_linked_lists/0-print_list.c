@@ -12,7 +12,7 @@ int i = 0;
 list_t *current = &h;
 do {
 if (current->str != NULL)
-printf("[%ul] %s\n", current->len, current->str);
+printf("[%u] %s\n", current->len, current->str);
 else
 printf("[0] (nil)\n");
 current = current->next;
