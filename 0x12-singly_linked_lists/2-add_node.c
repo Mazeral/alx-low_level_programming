@@ -15,7 +15,6 @@ next->str = malloc(sizeof(str));
 strcpy(next->str, str);
 next->len = strlen(str);
 
-(*head)->next = next;
-printf("[%u] %s\n", next->len, next->str);
-return (next);
+(*head) = next;
+return (*next);
 }
