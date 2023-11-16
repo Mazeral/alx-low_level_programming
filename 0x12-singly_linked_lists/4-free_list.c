@@ -8,15 +8,11 @@
 
 void free_list(list_t *head)
 {
-list_t *tmp1 = head, *tmp2;
-if (head)
-while (tmp1->next)
+list_t *tmp1 = head, *tmp2 = NULL;
+while (tmp1 != NULL)
 {
 tmp2 = tmp1->next;
 free(tmp1);
 tmp1 = tmp2;
 }
-else
-free(head);
-free(tmp2);
 }
