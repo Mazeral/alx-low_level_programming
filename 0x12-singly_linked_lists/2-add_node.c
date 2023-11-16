@@ -10,11 +10,16 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
+if (str == NULL)
+{
+printf("[0] (nil)\n");
+}
+
 list_t *next = malloc(sizeof(list_t));
 next->str = strdup(str);
 next->len = strlen(str);
 
 (*head)->next = next;
-printf("[%u] %s", next->len, next->str);
+printf("[%u] %s"\n, next->len, next->str);
 return (next);
 }
