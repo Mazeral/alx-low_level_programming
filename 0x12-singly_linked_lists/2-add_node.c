@@ -10,11 +10,7 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-if (str == NULL)
-{
-printf("[0] (nil)\n");
-}
-
+free((*head)->next);
 list_t *next = malloc(sizeof(list_t));
 next->str = strdup(str);
 next->len = strlen(str);
