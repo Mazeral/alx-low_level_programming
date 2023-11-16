@@ -16,7 +16,7 @@ strcpy(node->str, str);
 node->len = strlen(str);
 node->next = (*head);
 if (node)
-(*head) = next;
+(*head) = node;
 else
 return (NULL);
 return ((*head));
