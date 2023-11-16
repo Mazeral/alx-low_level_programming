@@ -15,5 +15,6 @@ next->str = strdup(str);
 next->len = strlen(str);
 
 (*head)->next = next;
+printf("[%u] %s", next->len, next->str);
 return (next);
 }
