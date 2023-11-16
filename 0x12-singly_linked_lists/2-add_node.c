@@ -14,7 +14,9 @@ list_t *next = malloc(sizeof(list_t));
 next->str = malloc(sizeof(str));
 strcpy(next->str, str);
 next->len = strlen(str);
-
+if (next)
 (*head) = next;
+else
+return (NULL);
 return ((*head));
 }
