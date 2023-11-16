@@ -20,6 +20,6 @@ next->str = strdup(str);
 next->len = strlen(str);
 
 (*head)->next = next;
-printf("[%u] %s"\n, next->len, next->str);
+printf("[%u] %s\n", next->len, next->str);
 return (next);
 }
