@@ -26,6 +26,10 @@ free(node);
 }
 strcpy(node->str, str);
 node->len = len;
+if (node->str == NULL)
+{
+free(node);
+}
 node->next = (*head);
 if (node)
 (*head) = node;
