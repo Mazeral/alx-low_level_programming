@@ -20,12 +20,20 @@ while (str[len])
 len++;
 
 node->str = malloc(sizeof(str));
-strcpy(node->str, str);
+node->str = strdup(str);
+if (!node->str)
+{
+free(node);
+return (NULL);
+}
 node->len = len;
 node->next = NULL;
 
-if (node == NULL)
+if (!node)
+{
+free(node);
 return (NULL);
+}
 
 if (bgn == NULL)
 {
