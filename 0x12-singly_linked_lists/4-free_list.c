@@ -12,6 +12,7 @@ list_t *tmp2 = NULL;
 while (head != NULL)
 {
 tmp2 = head->next;
+free(head->str);
 free(head);
 head = tmp2;
 }
