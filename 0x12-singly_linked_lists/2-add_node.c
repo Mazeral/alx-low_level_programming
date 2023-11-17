@@ -22,12 +22,14 @@ len++;
 node->str = malloc(sizeof(str));
 if (node->str == NULL)
 {
+free(node->str);
 free(node);
 }
 node->str = strdup(str);
 node->len = len;
 if (!(node->str = strdup(str)))
 {
+free(node->str);
 free(node);
 }
 node->next = (*head);
