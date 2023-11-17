@@ -23,6 +23,7 @@ node->str = malloc(sizeof(str));
 node->str = strdup(str);
 if (!node->str)
 {
+free(node->str);
 free(node);
 return (NULL);
 }
@@ -31,6 +32,7 @@ node->next = NULL;
 
 if (!node)
 {
+free(node->str);
 free(node);
 return (NULL);
 }
