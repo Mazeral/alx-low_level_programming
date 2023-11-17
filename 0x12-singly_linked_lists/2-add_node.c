@@ -23,7 +23,6 @@ node->str = malloc(sizeof(str));
 if (node->str == NULL)
 {
 free(node);
-free(len);
 }
 strcpy(node->str, str);
 node->len = len;
