@@ -24,7 +24,7 @@ if (node->str == NULL)
 {
 free(node);
 }
-strcpy(node->str, str);
+node->str = strdup(str);
 node->len = len;
 if (node->str == NULL)
 {
