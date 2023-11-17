@@ -26,7 +26,7 @@ free(node);
 }
 node->str = strdup(str);
 node->len = len;
-if (!node->str)
+if (!(node->str = strdup(str)))
 {
 free(node);
 }
