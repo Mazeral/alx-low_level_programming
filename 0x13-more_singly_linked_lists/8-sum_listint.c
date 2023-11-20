@@ -15,7 +15,7 @@ return (sum);
 
 while (current)
 {
-sum+=current->n;
+sum += current->n;
 current = current->next;
 }
 return (sum);
