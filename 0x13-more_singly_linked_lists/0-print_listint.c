@@ -16,6 +16,7 @@ return (i);
 node = &h;
 while ((*node)->next)
 {
+printf("%d", (*node)->n);
 node = (*node)->next;
 }
 return (i);
