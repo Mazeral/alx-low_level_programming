@@ -17,4 +17,5 @@ newNode.n->n;
 newNode.next->NULL;
 
 (*head)->next = node;
+return ((*head)->next);
 }
