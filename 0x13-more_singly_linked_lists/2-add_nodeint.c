@@ -14,6 +14,6 @@ if (!newNode)
 return (NULL);
 newNode->n = n;
 newNode->next = *head;
-*head = newNode
+*head = newNode;
 return (newNode);
 }
