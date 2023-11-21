@@ -13,7 +13,7 @@ if (!h)
 return (i);
 
 node = h;
-while (node->next)
+while (node)
 {
 node = node->next;
 i++;
