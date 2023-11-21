@@ -8,7 +8,7 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t **current;
+listint_t *current;
 listint_t *alt1;
 listint_t *alt2;
 unsigned int i = 0;
@@ -18,10 +18,10 @@ return (-1);
 current = head;
 while (current && i < index - 1)
 {
-current = (*current)->next;
+current = current->next;
 i++;
 }
-if (!current || i == index || !(*current)->next)
+if (!current || i == index || !current->next)
 return (-1);
 
 /* current is the element before the node to be deleted. */
@@ -29,13 +29,13 @@ return (-1);
 /* alt2 is the node that exist if there's a node after alt1. */
 alt1 = (*current)->next;
 if (alt1->next)
-{alt2 = at1->next;
-
-(*current)->next = alt2;
+{
+alt2 = at1->next;
+current->next = alt2;
 free(alt1->next);
 free(alt1);
 }
-(*current)->next = NULL;
+current->next = NULL;
 free(alt1->next);
 free(alt1);
 }
