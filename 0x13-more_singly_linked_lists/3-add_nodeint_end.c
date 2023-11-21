@@ -18,6 +18,7 @@ if (!*head)
 *head = endNode;
 return (endNode);
 }
+node = *head;
 while (node->next)
 node = node->next;
 
