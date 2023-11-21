@@ -8,9 +8,9 @@
 
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-listint_t *current;
-listint_t *alt1;
-listint_t *alt2;
+listint_t *current = malloc(sizeof(listint_t));
+listint_t *alt1 = malloc(sizeof(listint_t));
+listint_t *alt2 = malloc(sizeof(listint_t));
 unsigned int i = 0;
 if (!head)
 return (-1);
