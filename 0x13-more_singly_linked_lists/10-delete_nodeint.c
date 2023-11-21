@@ -27,7 +27,7 @@ return (-1);
 /* current is the element before the node to be deleted. */
 /* alt1 is the node which we want to delete. */
 /* alt2 is the node that exist if there's a node after alt1. */
-alt1 = (*current)->next;
+alt1 = current->next;
 if (alt1->next)
 {
 alt2 = at1->next;
