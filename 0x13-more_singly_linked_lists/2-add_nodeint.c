@@ -9,13 +9,13 @@
 
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-if (!head)
-return (NULL)
-
 listint_t *newNode;
-newNode.n->n;
-newNode.next->NULL;
+if (!head)
+return (NULL);
 
-(*head)->next = node;
+newNode->n = n;
+newNode->next = NULL;
+
+(*head)->next = newNode;
 return ((*head)->next);
 }
