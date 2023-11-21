@@ -6,26 +6,19 @@
  * Return: NULL if failed, the address if success
  */
 
-listint_t *add_nodeint_end(listint_t **head, const int n)
+void free_listint2(listint_t **head)
 {
-listint_t *new;
-listint_t *current = *head;
-new = malloc(sizeof(listint_t));
-if (!new)
-return (NULL);
-new->n = n;
-new->next = NULL;
+listint_t *current;
 
-if (*head == NULL)
+if (head == NULL)
+return;
+
+while (*head)
 {
-*head = new;
-return (new);
+current = (*head)->next;
+free(*head);
+*head = current;
 }
 
-while (current->next)
-current = current->next;
-
-current->next = new;
-
-return (new);
+*head = NULL;
 }
