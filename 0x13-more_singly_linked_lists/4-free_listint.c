@@ -10,6 +10,8 @@ void free_listint(listint_t *head)
 {
 listint_t *current1 = head;
 listint_t *current2 = head;
+if (head == NULL)
+return;
 while (current1 != NULL)
 {
 current1 = head->next;
