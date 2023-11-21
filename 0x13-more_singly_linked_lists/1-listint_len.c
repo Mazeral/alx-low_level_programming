@@ -7,15 +7,15 @@
  */
 size_t listint_len(const listint_t *h)
 {
-int i = 0;
-const listint_t **node;
+size_t i = 0;
+const listint_t *node;
 if (!h)
 return (i);
 
-node = &h;
-while ((*node)->next)
+node = h;
+while (node->next)
 {
-node = (*node)->next;
+node = node->next;
 i++;
 }
 return (i);
