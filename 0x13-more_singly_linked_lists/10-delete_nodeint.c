@@ -15,7 +15,7 @@ unsigned int i = 0;
 if (!head)
 return (-1);
 
-current = head;
+current = *head;
 while (current && i < index - 1)
 {
 current = current->next;
