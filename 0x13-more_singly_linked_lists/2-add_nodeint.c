@@ -17,5 +17,5 @@ newNode->n = n;
 newNode->next = NULL;
 
 (*head)->next = newNode;
-return ((*head)->next);
+return (newNode);
 }
