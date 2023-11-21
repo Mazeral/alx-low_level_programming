@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -8,16 +11,16 @@
 
 size_t print_listint(const listint_t *h)
 {
-const listint_t **node;
+const listint_t *node;
 int i = 0;
 if (!h)
 return (i);
 
-node = &h;
-while ((*node)->next)
+node = h;
+while (node->next)
 {
-printf("%d", (*node)->n);
-node = (*node)->next;
+printf("%d", node->n);
+node = node->next;
 }
 return (i);
 }
