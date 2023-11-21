@@ -15,10 +15,10 @@ newNode->next = NULL;
 
 if ((*head)->next)
 {
-newNode->next = malloc(sizeof(listint_t));
 newNode->next = (*head)->next;
 (*head)->next = newNode;
 }
+else
 (*head)->next = newNode;
-return ((*head)->next);
+return (newNode);
 }
