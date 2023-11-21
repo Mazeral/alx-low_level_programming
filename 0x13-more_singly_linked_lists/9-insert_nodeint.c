@@ -21,8 +21,8 @@ newNode->n = n;
 current = *head;
 while (current && index < idx)
 {
-if ((*head)->next)
-current = (*head)->next;
+if (current->next)
+current = current->next;
 else
 {
 return (NULL);
