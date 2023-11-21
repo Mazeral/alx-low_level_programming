@@ -17,7 +17,7 @@ int i = 0;
 node = h;
 while (node)
 {
-printf("%d\n", node->n);
+printf("%d", node->n);
 node = node->next;
 }
 return (i);
