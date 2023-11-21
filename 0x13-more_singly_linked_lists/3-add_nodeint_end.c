@@ -22,6 +22,6 @@ node = (*node)->next;
 
 (*node)->next = endNode;
 
-return (&endNode);
+return (endNode);
 }
 
