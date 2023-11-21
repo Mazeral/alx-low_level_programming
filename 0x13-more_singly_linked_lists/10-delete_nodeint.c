@@ -30,9 +30,8 @@ return (-1);
 alt1 = current->next;
 if (alt1->next)
 {
-alt2 = at1->next;
+alt2 = alt1->next;
 current->next = alt2;
-free(alt1->next);
 free(alt1);
 }
 current->next = NULL;
