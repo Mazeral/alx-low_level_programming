@@ -17,7 +17,6 @@ free(*head);
 while (next)
 {
 extra = next->next;
-free(next->next);
 free(next);
 next = extra;
 }
