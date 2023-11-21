@@ -13,6 +13,8 @@ listint_t *node;
 endNode->n = n;
 endNode->next = NULL;
 
+if (endNode == NULL)
+return (NULL);
 if (!*head)
 {
 *head = endNode;
