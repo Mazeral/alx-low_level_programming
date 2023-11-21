@@ -18,7 +18,7 @@ newNode->next = NULL;
 
 if ((*head)->next)
 {
-newNode-next = malloc(sizeof(listint_t));
+newNode->next = malloc(sizeof(listint_t));
 newNode->next = (*head)->next;
 (*head)->next = newNode;
 }
