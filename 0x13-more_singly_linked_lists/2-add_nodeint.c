@@ -16,8 +16,6 @@ return (NULL);
 newNode->n = n;
 newNode->next = NULL;
 
-/* Check if the head has already an element, if it does, make it 
- * newNode next element and change it's next value to null*/
 if ((*head)->next)
 {
 newNode->next = (*head)->next;
