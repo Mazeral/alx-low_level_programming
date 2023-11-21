@@ -23,5 +23,5 @@ newNode->next = (*head)->next;
 (*head)->next = newNode;
 }
 (*head)->next = newNode;
-return (newNode);
+return ((*head)->next);
 }
