@@ -13,8 +13,7 @@ return;
 listint_t *next = *head;
 listint_t *extra = *head;
 next = (*head)->next;
-(*head)->n = NULL;
-(*head)->next = NULL;
+free(*head);
 while (next)
 {
 extra = next->next;
