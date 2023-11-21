@@ -17,7 +17,7 @@ size_t i = 0;
 node = h;
 while (node && node->n)
 {
-printf("%d\n", node->n);
+printf("%d", node->n);
 node = node->next;
 }
 return (i);
