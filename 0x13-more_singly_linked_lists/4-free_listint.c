@@ -8,8 +8,8 @@
 
 void free_listint(listint_t *head)
 {
-listint_t **current1 = &head;
-listint_t **current2 = &head;
+listint_t *current1 = head;
+listint_t *current2 = head;
 while ((*current)->next)
 {
 current1 = head->next;
