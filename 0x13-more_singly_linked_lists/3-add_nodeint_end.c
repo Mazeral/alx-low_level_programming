@@ -15,7 +15,7 @@ endNode->next = NULL;
 
 if (endNode == NULL)
 return (NULL);
-if (!*head)
+if (*head == NULL)
 {
 *head = endNode;
 return (endNode);
