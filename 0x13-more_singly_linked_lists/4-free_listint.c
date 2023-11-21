@@ -6,16 +6,16 @@
  * Return: Nothing
  */
 
-void free_listint2(listint_t **head)
+void free_listint(listint_t *head)
 {
-listint_t *tmp;
-
-if (head)
+listint_t *current1 = head;
+listint_t *current2 = head;
+if (head == NULL)
+return;
+while (current1 != NULL)
 {
-while (*head != 0)
-{
-tmp = *head;
-*head = tmp->next;
-free(tmp);
+current1 = head->next;
+free(current2);
+current2 = current1;
 }
 }
