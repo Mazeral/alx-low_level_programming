@@ -15,7 +15,7 @@ const listint_t *node;
 size_t i = 0;
 
 node = h;
-while (node)
+while (node && node->n)
 {
 printf("%d", node->n);
 node = node->next;
