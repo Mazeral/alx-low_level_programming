@@ -20,14 +20,12 @@ newNode->n = n;
 current = *head;
 while (current && idx == index)
 {
-if (current->next)
 current = current->next;
-else
-{
-return (NULL);
-}
 index++;
 }
+if (current == NULL)
+return (NULL);
+
 if (!newNode)
 return (NULL);
 
