@@ -19,7 +19,6 @@ next = current->next;
 current->next = previous;
 previous = current;
 current = next;
-next = next->next;
 }
 return (current);
 }
