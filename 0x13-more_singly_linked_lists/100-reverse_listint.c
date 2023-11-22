@@ -13,7 +13,7 @@ listint_t *next = NULL;
 
 current = *head;
 
-while (current->next != NULL)
+while (current != NULL)
 {
 next = current->next;
 current->next = previous;
