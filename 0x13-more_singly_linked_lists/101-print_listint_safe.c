@@ -7,13 +7,13 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-
+listint_t *h = head;
 /* [0x1b500f0] 1024 */
 size_t i = 0;
 while (head)
 {
-printf("[%p] %d\n",head, head->n);
-head = head->next;
+printf("[%p] %d\n",h, h->n);
+h = h->next;
 i++;
 }
 return (i);
