@@ -12,7 +12,7 @@ listint_t *h = head;
 size_t i = 0;
 while (head)
 {
-printf("[%p] %d\n",h, h->n);
+printf("[%p] %d\n",(void *)h, h->n);
 h = h->next;
 i++;
 }
