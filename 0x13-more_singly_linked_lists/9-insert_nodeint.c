@@ -16,12 +16,12 @@ listint_t *alt = malloc(sizeof(listint_t));
 listint_t *newNode = malloc(sizeof(listint_t));
 newNode->n = n;
 newNode->next = NULL;
-if (idx == 0)
-{
-newNode->next = *head;
-*head = newNode;
-return (newNode);
-}
+ if (idx == 0)
+ {
+ newNode->next = *head;
+ *head = newNode;
+ return (newNode);
+ }
 current = *head;
 while (index < idx - 1)
 {
