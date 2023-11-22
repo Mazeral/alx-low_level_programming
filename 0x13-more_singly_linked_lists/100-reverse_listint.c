@@ -20,5 +20,6 @@ current->next = previous;
 previous = current;
 current = next;
 }
+*head = previous;
 return (current);
 }
