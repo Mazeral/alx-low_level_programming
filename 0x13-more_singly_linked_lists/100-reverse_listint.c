@@ -17,7 +17,8 @@ while (current->next != NULL)
 {
 next = current->next;
 current->next = previous;
-previous = next;
+previous = current;
+current = next;
 next = next->next;
 }
 retrun (current);
