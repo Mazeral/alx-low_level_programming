@@ -25,7 +25,7 @@ newNode->next = *head;
 *head = newNode;
 return (newNode);
 }
-while (current && idx < index)
+while (current && index < idx - 1)
 {
 current = current->next;
 index++;
