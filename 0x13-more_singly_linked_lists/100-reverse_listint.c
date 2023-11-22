@@ -21,5 +21,5 @@ previous = current;
 current = next;
 next = next->next;
 }
-retrun (current);
+return (current);
 }
