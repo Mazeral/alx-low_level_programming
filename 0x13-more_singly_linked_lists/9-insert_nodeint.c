@@ -14,8 +14,6 @@ unsigned int index = 0;
 listint_t *current = malloc(sizeof(listint_t));
 listint_t *alt = malloc(sizeof(listint_t));
 listint_t *newNode = malloc(sizeof(listint_t));
-if (!head)
-return (NULL);
 newNode->n = n;
 newNode->next = NULL;
 current = *head;
