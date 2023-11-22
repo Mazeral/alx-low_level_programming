@@ -26,10 +26,10 @@ current = *head;
 while (index < idx - 1)
 {
 current = current->next;
-index++;
-}
 if (current == NULL)
 return (NULL);
+index++;
+}
 
 if (!newNode)
 return (NULL);
