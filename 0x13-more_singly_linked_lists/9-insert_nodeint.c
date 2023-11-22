@@ -18,7 +18,7 @@ if (!head)
 return (NULL);
 newNode->n = n;
 current = *head;
-while (current && index < idx)
+while (current && idx == index)
 {
 if (current->next)
 current = current->next;
