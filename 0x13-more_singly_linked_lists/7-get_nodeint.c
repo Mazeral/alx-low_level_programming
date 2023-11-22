@@ -21,4 +21,5 @@ i++;
 current = current->next;
 }
 }
+return (NULL);
 }
