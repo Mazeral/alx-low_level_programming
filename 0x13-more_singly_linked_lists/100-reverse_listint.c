@@ -2,7 +2,7 @@
 
 /**
  * reverse_listint - a a function which reverse the linked list
- * head: The head of the linked list
+ * @head: The head of the linked list
  * Return: the head of the reversed linked list
  */
 listint_t *reverse_listint(listint_t **head)
