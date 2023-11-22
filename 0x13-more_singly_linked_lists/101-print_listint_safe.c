@@ -10,7 +10,7 @@ size_t print_listint_safe(const listint_t *head)
 
 /* [0x1b500f0] 1024 */
 size_t i = 0;
-while (h)
+while (head)
 {
 printf("[%p] %d\n",h, h->n);
 h = h->next;
