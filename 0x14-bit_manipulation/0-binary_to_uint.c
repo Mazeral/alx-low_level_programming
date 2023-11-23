@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 			if (b[i] == '1')
 			{
 				pow = 1;
-				for (j = 0; j < i; j++)
+				for (j = 1; j < i; j++)
 				pow *= 2;
 				sum += pow;
 			}
