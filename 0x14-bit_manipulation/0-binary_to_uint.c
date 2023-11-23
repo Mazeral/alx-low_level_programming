@@ -22,7 +22,7 @@ unsigned int binary_to_uint(const char *b)
 			{
 				pow = 1;
 				for (j = 0; j < a; j++)
-				pow *= 2;
+				pow =  pow * 2;
 				sum += pow;
 			}
 		a--;
