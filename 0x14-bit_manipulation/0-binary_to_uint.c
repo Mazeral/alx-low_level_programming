@@ -8,21 +8,25 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-unsigned len = strlen(b), sum = 0;
-int i;
-for (i = len; i >= 0; i--)
-{
-if (b[i] == '0' || b[i] == '1')
-{
-if (b[i] == '1')
-{
-sum = sum + pow(2, (len - i));
+	unsigned int sum = 0;
+	int i, j, pow;
+
+	for (i = strlen(b), i > 0, i--)
+	{
+		if (b[i] == '0' || b[i] == '1')
+		{
+			if (b[i] == '1')
+			{
+				pow = 1;
+				for (j = 0; j < i; j++)
+				pow *= 2;
+				sum += pow;
+			}
+		}
+		else
+		{
+			return (0);
+		}
 }
-}
-else
-{
-return (0);
-}
-}
-return (sum);
+	return (sum);
 }
