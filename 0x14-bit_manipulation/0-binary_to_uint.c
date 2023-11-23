@@ -9,9 +9,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0;
-	unsigned int i = strlen(b) - 1, j, pow;
+	int i = strlen(b) - 1, j, pow;
 
-	for (i = strlen(b); i >= 0; i--)
+	for (; i >= 0; i--)
 	{
 		if (b[i] == '0' || b[i] == '1')
 		{
