@@ -16,6 +16,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	f = fopen(filename, "r");
+	if (f == -1)
+		return (0);
 	while (fscanf(f, "%c", &chr) == 1 && counter < letters)
 	{
 		printf("%c", chr);
