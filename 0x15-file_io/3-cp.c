@@ -20,6 +20,11 @@ int main(int argc, char *argv[])
 	size_t file_size = 0;
 	ssize_t bytes_read;
 
+	if (argc != 3)
+	{
+		printf("Usage: cp file_from file_to\n");
+		exit(97);
+	}
 	if (file_descriptor_src == -1)
 	{
 		printf("Error: Can't read from file %s\n", argv[1]);
