@@ -36,9 +36,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	while ((bytes_read = read(file_descriptor_src, buffer, sizeof(buffer))) > 0)
-	{
 		file_size += bytes_read;
-	}
 	content = malloc(file_size);
 	lseek(file_descriptor_src, 0, SEEK_SET);
 	if (read(file_descriptor_src, content, file_size) == -1)
@@ -48,9 +46,7 @@ int main(int argc, char *argv[])
 	}
 	write_checker = write(file_descriptor_dest, content, file_size);
 	if (write_checker == -1)
-	{
 		printf("Error: Can't write to file %s\n", argv[2]);
-	}
 	close(file_descriptor_src);
 	close(file_descriptor_dest);
 	return (0);
