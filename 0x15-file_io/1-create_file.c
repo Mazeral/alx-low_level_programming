@@ -22,7 +22,7 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 
-	write_check = write(file_descriptor, text_content, strlen(text_content) - 1);
+	write_check = write(file_descriptor, text_content, strlen(text_content));
 	if (write_check == -1)
 		return (-1);
 	close(file_descriptor);
