@@ -8,7 +8,7 @@ int get_endianness(void)
 {
 	int sev = 7;
 
-	if ((sev >> 1) & 1 == 1)
+	if (((sev >> 1) & 1) == 1)
 		return (1);
 	else
 		return (0);
