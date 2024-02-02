@@ -16,12 +16,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL;
 
 	/* If the element doesn't exist, make it and return 1*/
-	printf("here");
-	if (ht->array[index])
+	if (!ht->array[index])
 	{
-	printf("here");
 		ht->array[index] = malloc(sizeof(hash_node_t));
-	printf("here");
 		ht->array[index]->key = strdup((char *)key);
 		ht->array[index]->value = strdup((char *)value);
 		ht->array[index]->next = NULL;
