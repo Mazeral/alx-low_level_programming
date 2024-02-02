@@ -10,6 +10,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	/* if success: return the pointer, else return NULL */
 	hash_table_t *hash_t = malloc(sizeof(hash_table_t) * size);
+
 	if (hash_t)
 		return (hash_t);
 
