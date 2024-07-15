@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "search_algos.h"
 /**
  * linear_search - a linear search algorithm function
  * @array: The array to search in
@@ -14,7 +13,7 @@ int linear_search(int *array, size_t size, int value)
 	for (i = 0; i < size; i++)
 	{
 		if (array[i] == value)
-			return (array[i]);
+			return (i);
 	}
 
 	return (-1);
